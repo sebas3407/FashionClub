@@ -364,7 +364,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="h5a-If-MxC" kind="presentation" modalPresentationStyle="fullScreen" id="u2f-eU-E92"/>
+                                    <segue destination="h5a-If-MxC" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="u2f-eU-E92"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -419,7 +419,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="uvd-WK-8EG" kind="presentation" modalPresentationStyle="fullScreen" id="xSQ-lL-RtV"/>
+                                    <segue destination="uvd-WK-8EG" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="xSQ-lL-RtV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -439,7 +439,7 @@
         <image name="square.and.arrow.up.fill" catalog="system" width="56" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2Ib-9j-rIf"/>
+        <segue reference="xSQ-lL-RtV"/>
         <segue reference="Yrb-3g-mfx"/>
     </inferredMetricsTieBreakers>
 </document>
