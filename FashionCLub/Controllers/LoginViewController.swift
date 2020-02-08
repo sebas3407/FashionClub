@@ -30,13 +30,6 @@ class LoginViewController: UIViewController {
         email = et_email.text ?? ""
         password = et_password.text ?? ""
         
-        if(email == "test" && password == "test"){
-            
-        }
-        else{
-            
-        }
-        
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let destVC = storyboard.instantiateViewController(withIdentifier: "TapBarVC") as! TabBarViewController
         
@@ -44,5 +37,21 @@ class LoginViewController: UIViewController {
         destVC.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
                 
         self.present(destVC, animated: true, completion: nil)
+        
+        if(email == "test" && password == "test"){
+            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            let destVC = storyboard.instantiateViewController(withIdentifier: "TapBarVC") as! TabBarViewController
+            
+            destVC.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+            destVC.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+                    
+            self.present(destVC, animated: true, completion: nil)
+        }
+        else{
+            let myalert = UIAlertController(title: "Datos incorrectos", message: "Por favor, verifica tu email y contraseña", preferredStyle: UIAlertController.Style.alert)
+            myalert.addAction(UIAlertAction(title: "Ok", style: .default))
+
+            self.present(myalert, animated: true)
+        }
     }
 }
