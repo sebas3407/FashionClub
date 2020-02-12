@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9310F0B023F313B900778780 /* UserConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310F0AF23F313B900778780 /* UserConfigurationViewController.swift */; };
+		9310F0B223F319B500778780 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310F0B123F319B500778780 /* User.swift */; };
 		932C13FC23E9C8F4003DBCF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C13FB23E9C8F4003DBCF9 /* AppDelegate.swift */; };
 		932C13FE23E9C8F4003DBCF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C13FD23E9C8F4003DBCF9 /* SceneDelegate.swift */; };
 		932C140023E9C8F4003DBCF9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C13FF23E9C8F4003DBCF9 /* FirstViewController.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		9310F0AF23F313B900778780 /* UserConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConfigurationViewController.swift; sourceTree = "<group>"; };
+		9310F0B123F319B500778780 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		932C13F823E9C8F4003DBCF9 /* FashionCLub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FashionCLub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		932C13FB23E9C8F4003DBCF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		932C13FD23E9C8F4003DBCF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9310F0B323F319BA00778780 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9310F0B123F319B500778780 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		932C13EF23E9C8F4003DBCF9 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +119,7 @@
 		932C13FA23E9C8F4003DBCF9 /* FashionCLub */ = {
 			isa = PBXGroup;
 			children = (
+				9310F0B323F319BA00778780 /* Model */,
 				934EBF8923EC8DFB00A96A18 /* Extensions */,
 				934EBF8423EC8B0800A96A18 /* Controllers */,
 				932C13FB23E9C8F4003DBCF9 /* AppDelegate.swift */,
@@ -295,6 +306,7 @@
 				932C13FC23E9C8F4003DBCF9 /* AppDelegate.swift in Sources */,
 				934EBF8B23EC8E2C00A96A18 /* TextFIeldExtensions.swift in Sources */,
 				934EBF8323EAEE6100A96A18 /* LoginViewController.swift in Sources */,
+				9310F0B223F319B500778780 /* User.swift in Sources */,
 				934EBF8823EC8BFE00A96A18 /* TabBarViewController.swift in Sources */,
 				9310F0B023F313B900778780 /* UserConfigurationViewController.swift in Sources */,
 				932C13FE23E9C8F4003DBCF9 /* SceneDelegate.swift in Sources */,
