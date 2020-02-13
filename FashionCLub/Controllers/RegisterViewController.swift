@@ -1,14 +1,14 @@
 //
-//  UserConfigurationViewController.swift
+//  RegisterViewController.swift
 //  FashionCLub
 //
-//  Created by macbookindra on 11/02/2020.
+//  Created by macbookindra on 13/02/2020.
 //  Copyright © 2020 macbookindra. All rights reserved.
 //
 
 import UIKit
 
-class UserConfigurationViewController: UITableViewController {
+class RegisterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

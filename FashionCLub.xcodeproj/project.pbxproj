@@ -21,6 +21,9 @@
 		934EBF8823EC8BFE00A96A18 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934EBF8723EC8BFE00A96A18 /* TabBarViewController.swift */; };
 		934EBF8B23EC8E2C00A96A18 /* TextFIeldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934EBF8A23EC8E2C00A96A18 /* TextFIeldExtensions.swift */; };
 		934EBF8D23EECEAF00A96A18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 934EBF8C23EECEAF00A96A18 /* Main.storyboard */; };
+		9376AC1D23F5562900AB768B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AC1C23F5562900AB768B /* RegisterViewController.swift */; };
+		9376AC1F23F5583B00AB768B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AC1E23F5583B00AB768B /* ProfileViewController.swift */; };
+		9376AC2723F5A00C00AB768B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AC2623F5A00C00AB768B /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		934EBF8723EC8BFE00A96A18 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		934EBF8A23EC8E2C00A96A18 /* TextFIeldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFIeldExtensions.swift; sourceTree = "<group>"; };
 		934EBF8C23EECEAF00A96A18 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9376AC1C23F5562900AB768B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9376AC1E23F5583B00AB768B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9376AC2623F5A00C00AB768B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				9310F0B123F319B500778780 /* User.swift */,
+				9376AC2623F5A00C00AB768B /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -158,6 +165,8 @@
 				932C13FF23E9C8F4003DBCF9 /* FirstViewController.swift */,
 				934EBF8723EC8BFE00A96A18 /* TabBarViewController.swift */,
 				9310F0AF23F313B900778780 /* UserConfigurationViewController.swift */,
+				9376AC1C23F5562900AB768B /* RegisterViewController.swift */,
+				9376AC1E23F5583B00AB768B /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -302,10 +311,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				932C140223E9C8F4003DBCF9 /* SecondViewController.swift in Sources */,
+				9376AC1D23F5562900AB768B /* RegisterViewController.swift in Sources */,
 				932C140023E9C8F4003DBCF9 /* FirstViewController.swift in Sources */,
 				932C13FC23E9C8F4003DBCF9 /* AppDelegate.swift in Sources */,
 				934EBF8B23EC8E2C00A96A18 /* TextFIeldExtensions.swift in Sources */,
+				9376AC2723F5A00C00AB768B /* Product.swift in Sources */,
 				934EBF8323EAEE6100A96A18 /* LoginViewController.swift in Sources */,
+				9376AC1F23F5583B00AB768B /* ProfileViewController.swift in Sources */,
 				9310F0B223F319B500778780 /* User.swift in Sources */,
 				934EBF8823EC8BFE00A96A18 /* TabBarViewController.swift in Sources */,
 				9310F0B023F313B900778780 /* UserConfigurationViewController.swift in Sources */,

@@ -17,6 +17,40 @@ class LoginViewController: UIViewController {
         
         et_email.setBottomBorder(bottomColor: bottomColor)
         et_password.setBottomBorder(bottomColor: bottomColor)
+        
+        DownloadQuote()
+    }
+    
+    func DownloadQuote()
+    {
+        
+        //Implementing URLSession
+        let urlString = "http://sebastian-ortiz.000webhostapp.com/product.json"
+        guard let url = URL(string: urlString) else { return }
+        
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if error != nil {
+                print(error!.localizedDescription)
+            }
+            
+            guard let dataFromUrl = data else { return }
+            do {
+                
+                let articlesData = try JSONDecoder().decode(Product.self, from: dataFromUrl)
+                
+                DispatchQueue.main.async {
+                    
+                    print(articlesData)
+                }
+                
+            } catch let jsonError {
+                print(jsonError)
+            }
+            
+            }.resume()
+        //End implementing URLSession
+        
+        
     }
     
     @IBOutlet weak var et_email: UITextField!
