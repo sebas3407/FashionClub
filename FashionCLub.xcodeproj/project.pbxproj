@@ -24,6 +24,7 @@
 		9376AC1D23F5562900AB768B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AC1C23F5562900AB768B /* RegisterViewController.swift */; };
 		9376AC1F23F5583B00AB768B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AC1E23F5583B00AB768B /* ProfileViewController.swift */; };
 		9376AC2723F5A00C00AB768B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AC2623F5A00C00AB768B /* Product.swift */; };
+		9376AC2A23F5AB4900AB768B /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AC2923F5AB4900AB768B /* ApiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		9376AC1C23F5562900AB768B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9376AC1E23F5583B00AB768B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9376AC2623F5A00C00AB768B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		9376AC2923F5AB4900AB768B /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		932C13FA23E9C8F4003DBCF9 /* FashionCLub */ = {
 			isa = PBXGroup;
 			children = (
+				9376AC2823F5AB2800AB768B /* Services */,
 				9310F0B323F319BA00778780 /* Model */,
 				934EBF8923EC8DFB00A96A18 /* Extensions */,
 				934EBF8423EC8B0800A96A18 /* Controllers */,
@@ -177,6 +180,14 @@
 				934EBF8A23EC8E2C00A96A18 /* TextFIeldExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9376AC2823F5AB2800AB768B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9376AC2923F5AB4900AB768B /* ApiService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +328,7 @@
 				934EBF8B23EC8E2C00A96A18 /* TextFIeldExtensions.swift in Sources */,
 				9376AC2723F5A00C00AB768B /* Product.swift in Sources */,
 				934EBF8323EAEE6100A96A18 /* LoginViewController.swift in Sources */,
+				9376AC2A23F5AB4900AB768B /* ApiService.swift in Sources */,
 				9376AC1F23F5583B00AB768B /* ProfileViewController.swift in Sources */,
 				9310F0B223F319B500778780 /* User.swift in Sources */,
 				934EBF8823EC8BFE00A96A18 /* TabBarViewController.swift in Sources */,

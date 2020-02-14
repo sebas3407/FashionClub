@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+// MARK: - UserElement
+struct UserElement: Codable {
+    let email, password, name, surname: String
+}
+
+typealias User = [UserElement]
