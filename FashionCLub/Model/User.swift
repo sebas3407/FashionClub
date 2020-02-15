@@ -14,3 +14,8 @@ struct UserElement: Codable {
 }
 
 typealias User = [UserElement]
+
+class Student {
+    public static var estudiante = Student()
+   var name: String = ""
+}

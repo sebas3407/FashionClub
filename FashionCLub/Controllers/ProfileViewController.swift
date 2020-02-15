@@ -10,10 +10,11 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    var a : String = "a"
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let destVC = storyboard?.instantiateViewController(withIdentifier: "TapBarVC") as! TabBarViewController
     }
     
 

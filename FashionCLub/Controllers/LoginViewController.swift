@@ -19,9 +19,10 @@ class LoginViewController: UIViewController {
     var email = ""
     var password = ""
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-            
+                
         let bottomColor : CGColor = UIColor.init(displayP3Red: 0.86, green: 0.86, blue: 0.89, alpha: 1).cgColor
 
         et_email.setBottomBorder(bottomColor: bottomColor)
@@ -57,11 +58,16 @@ class LoginViewController: UIViewController {
         
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let destVC = storyboard.instantiateViewController(withIdentifier: "TapBarVC") as! TabBarViewController
-        let test = storyboard.instantiateViewController(withIdentifier: "UserConfigurationVC") as! UserConfigurationViewController
         
-        test.user = self.user
-        test.prueba = "sebasortiz2000@gmail.com"
+        let test = storyboard.instantiateViewController(withIdentifier: "ProfileVC") as! ProfileViewController
+
+        destVC.user = self.user
         
+        test.a = "sebasortiz2000@gmail.com"
+        
+        Student.estudiante.name = "sebasortiz2000@gmail.com"
+        print("Vamos a triunfar \(Student.estudiante.name)")
+                
         destVC.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         destVC.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
                 
@@ -84,8 +90,9 @@ class LoginViewController: UIViewController {
         let urlString = ApiService.init().authenticateUser(user: email, password: password)
         let url = URL(string: urlString)!
        doLogin()
-        
-//        URLSession.shared.dataTask(with: url) { (data, response, error) in
+    
+
+        //        URLSession.shared.dataTask(with: url) { (data, response, error) in
 //            if error != nil {
 //                print(error!.localizedDescription)
 //            }

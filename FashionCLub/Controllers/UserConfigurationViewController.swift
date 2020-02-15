@@ -13,11 +13,12 @@ class UserConfigurationViewController: UITableViewController {
     @IBOutlet weak var lbl_email: UILabel!
     
     var user : User = []
-    var prueba : String = "klhlkjkj"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lbl_email.text = prueba
+
+        print("que tenemos por aqui\(Student.estudiante.name) ")
+        lbl_email.text = Student.estudiante.name
     }
     
 
