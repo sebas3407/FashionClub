@@ -11,6 +11,12 @@ import Foundation
 public class ApiService {
     public let getProduct : String = "http://sebastian-ortiz.000webhostapp.com/product.json"
     
+    func creatreProduct(){}
+    
+    func modifyProduct(){}
+    
+    func deleteProduct(){}
+    
     func authenticateUser(user : String, password : String) -> String {
         return "https://sebastian-ortiz.000webhostapp.com/authentication.json"
         //return "http://sebastian-ortiz.000webhostapp.com/user=\(user)&password=\(password)"
