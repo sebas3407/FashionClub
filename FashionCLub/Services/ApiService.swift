@@ -12,8 +12,13 @@ public class ApiService {
     public let getProduct : String = "http://sebastian-ortiz.000webhostapp.com/product.json"
     
     func authenticateUser(user : String, password : String) -> String {
-        return "https://sebastian-ortiz.000webhostapp.com/authenticatison.json"
+        return "https://sebastian-ortiz.000webhostapp.com/authentication.json"
         //return "http://sebastian-ortiz.000webhostapp.com/user=\(user)&password=\(password)"
+    }
+    
+    func getUser(user : String) -> String {
+        return "https://sebastian-ortiz.000webhostapp.com/authenticatison.json"
+        //return "http://sebastian-ortiz.000webhostapp.com/user=\(user)"
     }
         
 }

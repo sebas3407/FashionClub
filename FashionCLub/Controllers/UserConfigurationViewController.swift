@@ -10,10 +10,14 @@ import UIKit
 
 class UserConfigurationViewController: UITableViewController {
 
+    @IBOutlet weak var lbl_email: UILabel!
+    
+    var user : User = []
+    var prueba : String = "klhlkjkj"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        lbl_email.text = prueba
     }
     
 

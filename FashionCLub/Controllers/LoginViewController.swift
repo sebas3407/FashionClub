@@ -57,6 +57,10 @@ class LoginViewController: UIViewController {
         
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let destVC = storyboard.instantiateViewController(withIdentifier: "TapBarVC") as! TabBarViewController
+        let test = storyboard.instantiateViewController(withIdentifier: "UserConfigurationVC") as! UserConfigurationViewController
+        
+        test.user = self.user
+        test.prueba = "sebasortiz2000@gmail.com"
         
         destVC.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         destVC.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
@@ -79,26 +83,26 @@ class LoginViewController: UIViewController {
         
         let urlString = ApiService.init().authenticateUser(user: email, password: password)
         let url = URL(string: urlString)!
-       // doLogin()
+       doLogin()
         
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
-            if error != nil {
-                print(error!.localizedDescription)
-            }
-            
-            let dataFromUrl = data!
-            do {
-                self.user = try JSONDecoder().decode(User.self, from: dataFromUrl)
-                
-                DispatchQueue.main.sync {
-                    //Si entramos aqui, hemos podido encontrar un usuario y parsearlo, por tanto, hacemos login
-                    self.doLogin()
-                }
-            } catch let jsonError {
-                print(jsonError)
-            }
-            
-            }.resume()
-            showErrorMessage(title: "Datos incorrectos", message: "Por favor, comprueba tu email y contraseña")
+//        URLSession.shared.dataTask(with: url) { (data, response, error) in
+//            if error != nil {
+//                print(error!.localizedDescription)
+//            }
+//
+//            let dataFromUrl = data!
+//            do {
+//                self.user = try JSONDecoder().decode(User.self, from: dataFromUrl)
+//
+//                DispatchQueue.main.sync {
+//                    //Si entramos aqui, hemos podido encontrar un usuario y parsearlo, por tanto, hacemos login
+//                    self.doLogin()
+//                }
+//            } catch let jsonError {
+//                print(jsonError)
+//            }
+//
+//            }.resume()
+         //   showErrorMessage(title: "Datos incorrectos", message: "Por favor, comprueba tu email y contraseña")
     }
 }
