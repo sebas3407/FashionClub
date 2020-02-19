@@ -19,14 +19,17 @@ class LoginViewController: UIViewController {
     var email = ""
     var password = ""
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
                 
-        let bottomColor : CGColor = UIColor.init(displayP3Red: 0.86, green: 0.86, blue: 0.89, alpha: 1).cgColor
+        /*
 
-        et_email.setBottomBorder(bottomColor: bottomColor)
-        et_password.setBottomBorder(bottomColor: bottomColor)
+        
+        let bottomColor : CGColor = UIColor.init(displayP3Red: 0.86, green: 0.86, blue: 0.89, alpha: 1).cgColor
+ */
+
+     //   et_email.setBottomBorder(bottomColor: bottomColor)
+     //   et_password.setBottomBorder(bottomColor: bottomColor)
         
         }
     
@@ -90,7 +93,6 @@ class LoginViewController: UIViewController {
         let urlString = ApiService.init().authenticateUser(user: email, password: password)
         let url = URL(string: urlString)!
        doLogin()
-    
 
         //        URLSession.shared.dataTask(with: url) { (data, response, error) in
 //            if error != nil {

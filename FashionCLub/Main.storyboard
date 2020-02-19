@@ -257,6 +257,7 @@
                         <viewLayoutGuide key="safeArea" id="sYT-Ty-DBc"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="YfP-DM-gSl"/>
+                    <navigationItem key="navigationItem" id="5SV-XH-oUV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vDa-ea-j9Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -310,7 +311,7 @@
         <!--Walkthrough 2-->
         <scene sceneID="Jrn-od-oQQ">
             <objects>
-                <viewController id="uvd-WK-8EG" userLabel="Walkthrough 2" sceneMemberID="viewController">
+                <viewController id="uvd-WK-8EG" userLabel="Walkthrough 2" customClass="WalkthroughSecondViewController" customModule="FashionCLub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jte-mt-HBs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -323,11 +324,18 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hN7-hd-QuZ">
-                                <rect key="frame" x="253" y="700" width="64" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hN7-hd-QuZ">
+                                <rect key="frame" x="88" y="674" width="200" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Siguiente">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Siguiente">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="21" name="Arial-BoldMT"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -338,17 +346,7 @@
                                     <segue destination="0sq-XE-DKA" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="w95-Ja-UGz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byK-Zu-7jX">
-                                <rect key="frame" x="54" y="700" width="55" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Anterior">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="h5a-If-MxC" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="u2f-eU-E92"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Se Parte" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrW-Gv-NVe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forma Parte" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrW-Gv-NVe">
                                 <rect key="frame" x="18" y="515" width="338" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
@@ -366,6 +364,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="fVI-3F-HtQ"/>
                     </view>
+                    <connections>
+                        <outlet property="btn_next" destination="hN7-hd-QuZ" id="OvL-3p-3km"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iSk-94-9RQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -374,7 +375,7 @@
         <!--Walkthrough 3-->
         <scene sceneID="3dG-16-Hu8">
             <objects>
-                <viewController id="0sq-XE-DKA" userLabel="Walkthrough 3" sceneMemberID="viewController">
+                <viewController id="0sq-XE-DKA" userLabel="Walkthrough 3" customClass="WalkthroughThirdViewController" customModule="FashionCLub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nBU-CI-EkD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -387,31 +388,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idk-Ej-Wnj">
-                                <rect key="frame" x="157" y="603" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pp8-10-bOu">
-                                <rect key="frame" x="259" y="689" width="64" height="48"/>
+                                <rect key="frame" x="88" y="674" width="200" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="21"/>
                                 <state key="normal" title="Siguiente">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="4op-e3-wXm" kind="presentation" modalPresentationStyle="fullScreen" id="ZIy-fb-l8M"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dQ-hC-J2N">
-                                <rect key="frame" x="65" y="698" width="55" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Anterior">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="uvd-WK-8EG" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="xSQ-lL-RtV"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="En productos asiaticos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oP-VR-Vc4">
@@ -432,6 +417,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="a7c-TD-nES"/>
                     </view>
+                    <connections>
+                        <outlet property="btn_next" destination="Pp8-10-bOu" id="bAu-kv-Uym"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2cq-r3-tL9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -657,7 +645,9 @@
                             <outlet property="delegate" destination="Jld-SR-ylq" id="s3t-k1-HRT"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Configuración" id="iKf-hG-oem"/>
+                    <navigationItem key="navigationItem" title="Configuración" id="iKf-hG-oem">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="done" id="f2e-2j-mTN"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="lbl_email" destination="6aE-z7-uhX" id="JxM-TW-fL5"/>
                     </connections>
@@ -750,7 +740,6 @@
         <image name="square.and.arrow.up.fill" catalog="system" width="56" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xSQ-lL-RtV"/>
         <segue reference="n8s-4Y-dox"/>
     </inferredMetricsTieBreakers>
 </document>

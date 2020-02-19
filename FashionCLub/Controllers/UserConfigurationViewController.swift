@@ -10,18 +10,21 @@ import UIKit
 
 class UserConfigurationViewController: UITableViewController {
 
-    @IBOutlet weak var lbl_email: UILabel!
-    @IBOutlet weak var tableSection: UITableViewCell!
-    
+    @IBOutlet weak var lbl_email: UILabel!    
     var user : User = []
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        lbl_email.text = Student.estudiante.name
+    }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        print("index path \(indexPath.row)")
-        print("index section \(indexPath.section)")
         if (indexPath.section == 3) {
-            if (indexPath.row == 0){
+            if (indexPath.row == 0) {
                 shareApp()
+            }
+            else if (indexPath.row == 1) {
+                sendMail()
             }
         }
     }
@@ -39,10 +42,7 @@ class UserConfigurationViewController: UITableViewController {
         self.present(activityViewController, animated: true, completion: nil)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        print("que tenemos por aqui\(Student.estudiante.name) ")
-        lbl_email.text = Student.estudiante.name
+    func sendMail(){
+        
     }
 }

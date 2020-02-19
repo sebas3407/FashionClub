@@ -25,6 +25,8 @@
 		9376AC1F23F5583B00AB768B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AC1E23F5583B00AB768B /* ProfileViewController.swift */; };
 		9376AC2723F5A00C00AB768B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AC2623F5A00C00AB768B /* Product.swift */; };
 		9376AC2A23F5AB4900AB768B /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AC2923F5AB4900AB768B /* ApiService.swift */; };
+		9376AC2E23FD394C00AB768B /* WalkthroughSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AC2D23FD394C00AB768B /* WalkthroughSecondViewController.swift */; };
+		9376AC3023FD512500AB768B /* WalkthroughThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AC2F23FD512500AB768B /* WalkthroughThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		9376AC1E23F5583B00AB768B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9376AC2623F5A00C00AB768B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		9376AC2923F5AB4900AB768B /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		9376AC2D23FD394C00AB768B /* WalkthroughSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughSecondViewController.swift; sourceTree = "<group>"; };
+		9376AC2F23FD512500AB768B /* WalkthroughThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,8 @@
 				9310F0AF23F313B900778780 /* UserConfigurationViewController.swift */,
 				9376AC1C23F5562900AB768B /* RegisterViewController.swift */,
 				9376AC1E23F5583B00AB768B /* ProfileViewController.swift */,
+				9376AC2D23FD394C00AB768B /* WalkthroughSecondViewController.swift */,
+				9376AC2F23FD512500AB768B /* WalkthroughThirdViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -326,6 +332,8 @@
 				932C140023E9C8F4003DBCF9 /* FirstViewController.swift in Sources */,
 				932C13FC23E9C8F4003DBCF9 /* AppDelegate.swift in Sources */,
 				934EBF8B23EC8E2C00A96A18 /* TextFIeldExtensions.swift in Sources */,
+				9376AC3023FD512500AB768B /* WalkthroughThirdViewController.swift in Sources */,
+				9376AC2E23FD394C00AB768B /* WalkthroughSecondViewController.swift in Sources */,
 				9376AC2723F5A00C00AB768B /* Product.swift in Sources */,
 				934EBF8323EAEE6100A96A18 /* LoginViewController.swift in Sources */,
 				9376AC2A23F5AB4900AB768B /* ApiService.swift in Sources */,

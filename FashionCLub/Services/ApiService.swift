@@ -26,6 +26,9 @@ public class ApiService {
         return "https://sebastian-ortiz.000webhostapp.com/authenticatison.json"
         //return "http://sebastian-ortiz.000webhostapp.com/user=\(user)"
     }
+    
+    func createUser(email : String, password : String) -> String {
         
+        return ""
+    }
 }
-
