@@ -21,15 +21,11 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                
-        /*
-
         
         let bottomColor : CGColor = UIColor.init(displayP3Red: 0.86, green: 0.86, blue: 0.89, alpha: 1).cgColor
- */
 
-     //   et_email.setBottomBorder(bottomColor: bottomColor)
-     //   et_password.setBottomBorder(bottomColor: bottomColor)
+        et_email.setBottomBorder(bottomColor: bottomColor)
+        et_password.setBottomBorder(bottomColor: bottomColor)
         
         }
     
