@@ -27,6 +27,7 @@
 		9376AC2A23F5AB4900AB768B /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AC2923F5AB4900AB768B /* ApiService.swift */; };
 		9376AC2E23FD394C00AB768B /* WalkthroughSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AC2D23FD394C00AB768B /* WalkthroughSecondViewController.swift */; };
 		9376AC3023FD512500AB768B /* WalkthroughThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AC2F23FD512500AB768B /* WalkthroughThirdViewController.swift */; };
+		9376AC3323FEB44700AB768B /* WalkthroughFirstViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AC3223FEB44700AB768B /* WalkthroughFirstViewControllerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		9376AC2923F5AB4900AB768B /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		9376AC2D23FD394C00AB768B /* WalkthroughSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughSecondViewController.swift; sourceTree = "<group>"; };
 		9376AC2F23FD512500AB768B /* WalkthroughThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughThirdViewController.swift; sourceTree = "<group>"; };
+		9376AC3223FEB44700AB768B /* WalkthroughFirstViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughFirstViewControllerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 		934EBF8423EC8B0800A96A18 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9376AC3123FEB3EF00AB768B /* Walkthrough */,
 				932C140123E9C8F4003DBCF9 /* SecondViewController.swift */,
 				934EBF8223EAEE6100A96A18 /* LoginViewController.swift */,
 				932C13FF23E9C8F4003DBCF9 /* FirstViewController.swift */,
@@ -174,8 +177,6 @@
 				9310F0AF23F313B900778780 /* UserConfigurationViewController.swift */,
 				9376AC1C23F5562900AB768B /* RegisterViewController.swift */,
 				9376AC1E23F5583B00AB768B /* ProfileViewController.swift */,
-				9376AC2D23FD394C00AB768B /* WalkthroughSecondViewController.swift */,
-				9376AC2F23FD512500AB768B /* WalkthroughThirdViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -194,6 +195,16 @@
 				9376AC2923F5AB4900AB768B /* ApiService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		9376AC3123FEB3EF00AB768B /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				9376AC2D23FD394C00AB768B /* WalkthroughSecondViewController.swift */,
+				9376AC2F23FD512500AB768B /* WalkthroughThirdViewController.swift */,
+				9376AC3223FEB44700AB768B /* WalkthroughFirstViewControllerViewController.swift */,
+			);
+			path = Walkthrough;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +341,7 @@
 				932C140223E9C8F4003DBCF9 /* SecondViewController.swift in Sources */,
 				9376AC1D23F5562900AB768B /* RegisterViewController.swift in Sources */,
 				932C140023E9C8F4003DBCF9 /* FirstViewController.swift in Sources */,
+				9376AC3323FEB44700AB768B /* WalkthroughFirstViewControllerViewController.swift in Sources */,
 				932C13FC23E9C8F4003DBCF9 /* AppDelegate.swift in Sources */,
 				934EBF8B23EC8E2C00A96A18 /* TextFIeldExtensions.swift in Sources */,
 				9376AC3023FD512500AB768B /* WalkthroughThirdViewController.swift in Sources */,
