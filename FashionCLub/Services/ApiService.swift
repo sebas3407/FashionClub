@@ -2,8 +2,8 @@
 //  ApiService.swift
 //  FashionCLub
 //
-//  Created by macbookindra on 13/02/2020.
-//  Copyright © 2020 macbookindra. All rights reserved.
+//  Created by Sebastian Ortiz on 13/02/2020.
+//  Copyright © 2020 Sebastian Ortiz. All rights reserved.
 //
 
 import Foundation
