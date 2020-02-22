@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>267818746051-iqvq4r1ghj7ij5a3opqsevrib6jteglh.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.267818746051-iqvq4r1ghj7ij5a3opqsevrib6jteglh</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBfyCsM8c9eBTH8FF7Pi3iP3ZcZPAq3Wj4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>267818746051</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>anchorTeam.FashionCLub</string>
+	<key>PROJECT_ID</key>
+	<string>fashionclub-f12dc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fashionclub-f12dc.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:267818746051:ios:efc50b2771595047f9e276</string>
+	<key>DATABASE_URL</key>
+	<string>https://fashionclub-f12dc.firebaseio.com</string>
+</dict>
+</plist>
