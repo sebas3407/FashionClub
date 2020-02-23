@@ -8,14 +8,25 @@
 
 import Foundation
 
-// MARK: - UserElement
-struct UserElement: Codable {
-    let email, password, name, surname: String
-}
+struct User {
 
-typealias User = [UserElement]
+    var email: String
+    var password: String
 
-class Student {
-    public static var estudiante = Student()
-   var name: String = ""
+    init?(data: [String: Any]) {
+
+        guard let email = data["email"] as? String,
+            let password = data["password"] as? String
+            else{
+                return nil
+        }
+
+        self.email = email
+        self.password = password
+    }
+    
+    init?() {
+        self.email = ""
+        self.password = ""
+    }
 }
