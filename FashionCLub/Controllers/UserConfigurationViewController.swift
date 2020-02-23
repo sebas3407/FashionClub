@@ -8,10 +8,23 @@
 
 import UIKit
 
-class UserConfigurationViewController: UITableViewController {
+class UserConfigurationViewController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return gender.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return gender[row]
+    }
 
-    @IBOutlet weak var lbl_email: UILabel!    
+    @IBOutlet weak var lbl_email: UILabel!
     var user : User = []
+    var gender = ["Para hombre","Para mujer"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
