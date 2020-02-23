@@ -9,8 +9,6 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
-
-    var user : User = []
     
     override func viewDidLoad() {
         super.viewDidLoad()

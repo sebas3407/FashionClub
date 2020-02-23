@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -139,7 +139,6 @@
 				09C20442474268E9972557F4 /* Pods-FashionCLubTests.debug.xcconfig */,
 				526303FC224085462739882E /* Pods-FashionCLubTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -244,9 +243,9 @@
 		9376AC3123FEB3EF00AB768B /* Walkthrough */ = {
 			isa = PBXGroup;
 			children = (
+				9376AC3223FEB44700AB768B /* WalkthroughFirstViewControllerViewController.swift */,
 				9376AC2D23FD394C00AB768B /* WalkthroughSecondViewController.swift */,
 				9376AC2F23FD512500AB768B /* WalkthroughThirdViewController.swift */,
-				9376AC3223FEB44700AB768B /* WalkthroughFirstViewControllerViewController.swift */,
 			);
 			path = Walkthrough;
 			sourceTree = "<group>";

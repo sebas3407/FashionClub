@@ -23,12 +23,11 @@ class UserConfigurationViewController: UITableViewController, UIPickerViewDelega
     }
 
     @IBOutlet weak var lbl_email: UILabel!
-    var user : User = []
     var gender = ["Para hombre","Para mujer"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lbl_email.text = Student.estudiante.name
+     //   lbl_email.text = Student.estudiante.name
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
