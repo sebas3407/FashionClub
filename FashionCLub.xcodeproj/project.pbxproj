@@ -24,6 +24,9 @@
 		934EBF8823EC8BFE00A96A18 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934EBF8723EC8BFE00A96A18 /* TabBarViewController.swift */; };
 		934EBF8B23EC8E2C00A96A18 /* TextFIeldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934EBF8A23EC8E2C00A96A18 /* TextFIeldExtensions.swift */; };
 		934EBF8D23EECEAF00A96A18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 934EBF8C23EECEAF00A96A18 /* Main.storyboard */; };
+		93683A3B24058AA500C7E4C7 /* ButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93683A3A24058AA500C7E4C7 /* ButtonExtension.swift */; };
+		93683A3D24058B2000C7E4C7 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93683A3C24058B2000C7E4C7 /* UIColorExtension.swift */; };
+		93683A3F24058B2D00C7E4C7 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93683A3E24058B2D00C7E4C7 /* UIViewExtension.swift */; };
 		9376AC1D23F5562900AB768B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AC1C23F5562900AB768B /* RegisterViewController.swift */; };
 		9376AC1F23F5583B00AB768B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AC1E23F5583B00AB768B /* ProfileViewController.swift */; };
 		9376AC2723F5A00C00AB768B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AC2623F5A00C00AB768B /* Product.swift */; };
@@ -80,6 +83,9 @@
 		934EBF8723EC8BFE00A96A18 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		934EBF8A23EC8E2C00A96A18 /* TextFIeldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFIeldExtensions.swift; sourceTree = "<group>"; };
 		934EBF8C23EECEAF00A96A18 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		93683A3A24058AA500C7E4C7 /* ButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtension.swift; sourceTree = "<group>"; };
+		93683A3C24058B2000C7E4C7 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		93683A3E24058B2D00C7E4C7 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		9376AC1C23F5562900AB768B /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9376AC1E23F5583B00AB768B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9376AC2623F5A00C00AB768B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
@@ -228,6 +234,9 @@
 			isa = PBXGroup;
 			children = (
 				934EBF8A23EC8E2C00A96A18 /* TextFIeldExtensions.swift */,
+				93683A3A24058AA500C7E4C7 /* ButtonExtension.swift */,
+				93683A3C24058B2000C7E4C7 /* UIColorExtension.swift */,
+				93683A3E24058B2D00C7E4C7 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -494,10 +503,13 @@
 				9376AC1D23F5562900AB768B /* RegisterViewController.swift in Sources */,
 				932C140023E9C8F4003DBCF9 /* FirstViewController.swift in Sources */,
 				9376AC3323FEB44700AB768B /* WalkthroughFirstViewControllerViewController.swift in Sources */,
+				93683A3D24058B2000C7E4C7 /* UIColorExtension.swift in Sources */,
 				932C13FC23E9C8F4003DBCF9 /* AppDelegate.swift in Sources */,
 				934EBF8B23EC8E2C00A96A18 /* TextFIeldExtensions.swift in Sources */,
 				9376AC3023FD512500AB768B /* WalkthroughThirdViewController.swift in Sources */,
 				9376AC2E23FD394C00AB768B /* WalkthroughSecondViewController.swift in Sources */,
+				93683A3F24058B2D00C7E4C7 /* UIViewExtension.swift in Sources */,
+				93683A3B24058AA500C7E4C7 /* ButtonExtension.swift in Sources */,
 				9376AC2723F5A00C00AB768B /* Product.swift in Sources */,
 				934EBF8323EAEE6100A96A18 /* LoginViewController.swift in Sources */,
 				9376AC2A23F5AB4900AB768B /* ApiService.swift in Sources */,
