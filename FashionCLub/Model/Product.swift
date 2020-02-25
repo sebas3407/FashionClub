@@ -8,16 +8,34 @@
 
 import Foundation
 
-// MARK: - ProductElement
-struct ProductElement: Codable {
-    let id, name, platform, productDescription: String
-    let points, price, image: String
+// MARK: - Product
+struct Product {
 
-    enum CodingKeys: String, CodingKey {
-        case id, name, platform
-        case productDescription = "description"
-        case points, price, image
+    var id : String = ""
+    var type : String = ""
+    var productDescription : String = ""
+    var price : Double = 0.0
+    var image : String = ""
+
+    init?(data: [String: Any]) {
+        guard
+            let id = data["id"] as? String,
+            let type = data["type"] as? String,
+            let productDescription = data["productDescription"] as? String,
+            let price = data["price"] as? Double,
+            let image = data["image"] as? String
+        else{
+            return nil
+        }
+
+        self.id = id
+        self.type = type
+        self.productDescription = productDescription
+        self.price = price
+        self.image = image
+    }
+        
+    //    Default constructor
+    init?() {
     }
 }
-
-typealias Product = [ProductElement]
