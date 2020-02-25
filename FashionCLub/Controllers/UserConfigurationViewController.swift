@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MessageUI
 
 class UserConfigurationViewController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
@@ -36,7 +37,7 @@ class UserConfigurationViewController: UITableViewController, UIPickerViewDelega
                 shareApp()
             }
             else if (indexPath.row == 1) {
-                sendMail()
+                sendEmail()
             }
         }
     }
@@ -54,7 +55,20 @@ class UserConfigurationViewController: UITableViewController, UIPickerViewDelega
         self.present(activityViewController, animated: true, completion: nil)
     }
     
-    func sendMail(){
-        
+    func sendEmail() {
+        if MFMailComposeViewController.canSendMail() {
+            let mail = MFMailComposeViewController()
+            mail.mailComposeDelegate = self as! MFMailComposeViewControllerDelegate
+            mail.setToRecipients(["sebasortiz2000@gmail.com"])
+            mail.setMessageBody("<p>You're so awesome!</p>", isHTML: true)
+
+            present(mail, animated: true)
+        } else {
+            // show failure alert
+        }
+    }
+
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true)
     }
 }

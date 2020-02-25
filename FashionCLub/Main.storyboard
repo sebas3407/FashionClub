@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wVd-kT-6VB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4op-e3-wXm">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -136,18 +136,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="MLy-7a-jk3">
+                                <rect key="frame" x="19" y="226" width="343" height="268"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="I0E-Ix-r10"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="MLy-7a-jk3" id="KuU-Ge-70y"/>
                         <outlet property="et_email" destination="saI-US-C4p" id="B1Y-wN-PSt"/>
                         <outlet property="et_password" destination="EEs-D7-8wK" id="Vok-fW-1oJ"/>
+                        <outlet property="mainView" destination="coG-Kt-0fu" id="iEV-Uy-1qF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="88d-hS-N5p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-271" y="-94"/>
+            <point key="canvasLocation" x="-271.19999999999999" y="-94.581280788177338"/>
         </scene>
         <!--Register-->
         <scene sceneID="o2h-jE-rnb">
@@ -419,7 +426,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sebasortiz2000@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aE-z7-uhX">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="useremail@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aE-z7-uhX">
                                                     <rect key="frame" x="199" y="14" width="160" height="15"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -468,7 +475,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uwe-Au-uGO">
-                                                    <rect key="frame" x="6" y="-63" width="261" height="144"/>
+                                                    <rect key="frame" x="5" y="-63" width="260" height="144"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <connections>
                                                         <outlet property="dataSource" destination="Jld-SR-ylq" id="QQ1-bc-U5L"/>
@@ -645,7 +652,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Configuración" id="iKf-hG-oem">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="done" id="f2e-2j-mTN"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="f2e-2j-mTN"/>
                     </navigationItem>
                     <connections>
                         <outlet property="lbl_email" destination="6aE-z7-uhX" id="JxM-TW-fL5"/>
