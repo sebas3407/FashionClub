@@ -24,15 +24,20 @@ class LoginViewController: UIViewController {
         }
     }
     
+    @IBOutlet var mainView: UIView!
+    
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     let bottomColor : CGColor = UIColor.init(displayP3Red: 0.86, green: 0.86, blue: 0.89, alpha: 1).cgColor
 
-    var articlesData : Product = []
+//    var articlesData : Product = []
     var user = User()
     
     var email = ""
     var password = ""
     
     override func viewDidLoad() {
+        activityIndicator.isHidden = true
         super.viewDidLoad()
     }
     
@@ -40,10 +45,6 @@ class LoginViewController: UIViewController {
         
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let destVC = storyboard.instantiateViewController(withIdentifier: "TapBarVC") as! TabBarViewController
-        
-        let test = storyboard.instantiateViewController(withIdentifier: "ProfileVC") as! ProfileViewController
-        
-        test.a = "sebasortiz2000@gmail.com"
                 
         destVC.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         destVC.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
@@ -60,10 +61,11 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func checkCredentials(_ sender: UIButton) {
-        
         email = et_email.text ?? ""
         password = et_password.text ?? ""
         
+        setActivityIndicator(state: 1)
+
         #if DEBUG
         email = "sebasortiz2000@gmail.com"
         password = "12345678"
@@ -78,7 +80,8 @@ class LoginViewController: UIViewController {
                     if (querySnapshot!.documents.count > 0){
                         //We found the user
                         for document in querySnapshot!.documents {
-                            self.user = User.init(data: document.data())
+                            User.userPrueba = User.init(data: document.data())
+                            self.setActivityIndicator(state: 0)
                             self.doLogin()
                         }
                     }
@@ -86,6 +89,18 @@ class LoginViewController: UIViewController {
                         self.showErrorMessage(title: "Datos incorrectos", message: "Por favor, comprueba tu usuario y contraseña")
                     }
                 }
+        }
+    }
+    
+    func setActivityIndicator(state : Int) {
+        if (state == 1){
+              // mainView.isOpaque = false
+            //   mainView.backgroundColor = UIColor.black.withAlphaComponent(0.2)
+               activityIndicator.isHidden = false
+               activityIndicator.startAnimating()
+        }
+        else{
+            self.activityIndicator.stopAnimating()
         }
     }
 }

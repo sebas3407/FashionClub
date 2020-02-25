@@ -9,24 +9,35 @@
 import Foundation
 
 struct User {
+    
+    public static var userPrueba = User()
 
-    var email: String
-    var password: String
+//    var firstName : String = ""
+//    var lastName : String = ""
+//    var gender : String = ""
+    var email: String = ""
+    var password: String = ""
 
     init?(data: [String: Any]) {
-
-        guard let email = data["email"] as? String,
+        guard
+//            let firstName = data["firstName"] as? String,
+//            let lastName = data["lastName"] as? String,
+//            let gender = data["gender"] as? String,
+            let email = data["email"] as? String,
             let password = data["password"] as? String
-            else{
-                return nil
+        else{
+            return nil
         }
 
+//        self.firstName = firstName
+//        self.lastName = lastName
+//        self.gender = gender
         self.email = email
         self.password = password
     }
     
+//    Default constructor
     init?() {
-        self.email = ""
-        self.password = ""
     }
 }
+
