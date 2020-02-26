@@ -16,10 +16,12 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var et_password: UITextField!
     @IBOutlet weak var et_repeatPassword: UITextField!
     
+    var firstName : String = ""
+    var lastName : String = ""
+    var gender : String = ""
     var email : String = ""
     var password : String = ""
     var repeatPassword : String = ""
-    var gender : String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,10 +33,11 @@ class RegisterViewController: UIViewController {
         
         email = et_email.text ?? ""
         password = et_password.text ?? ""
+        repeatPassword = et_repeatPassword.text ?? ""
             
         createNewUser(email: self.email, password: self.password)
         
-        if(isTheSamePassword(password: self.password, repeatPassword: self.password)){
+        if(isTheSamePassword(password: self.password, repeatPassword: self.repeatPassword)){
         }
         else{
             //las contraseñas no concuerdan
@@ -48,19 +51,30 @@ class RegisterViewController: UIViewController {
     // Add a new document with a generated ID
     func createNewUser(email : String, password : String){
         
-       let db = Firestore.firestore()
-       var ref: DocumentReference? = nil
-       ref = db.collection("user").addDocument(data: [
-           "email": email,
-           "password": password
-       ]) { err in
-           if let err = err {
-               print("Error adding document: \(err)")
-           } else {
-               print("User \(email) created")
-           }
-       }
+        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+            if let err = error {
+                print("Error adding document: \(err)")
+            } else {
+                print("User \(email) created")
+                
+                 //Create firestore account
+                 let db = Firestore.firestore()
+                 var ref: DocumentReference? = nil
+                 ref = db.collection("user").addDocument(data: [
+                    "email": email,
+                    "password": password
+                ]) { err in
+                    if let err = err {
+                        print("Error adding document: \(err)")
+                    } else {
+                        print("User \(email) created")
+                    }
+                }
+            }
+        }
     }
+    
+    
     /*
     // MARK: - Navigation
 

@@ -12,6 +12,7 @@ pod 'Firebase/Analytics'
 
 pod 'Firebase/Core'
 pod 'Firebase/Firestore'
+pod 'FirebaseUI'
 
 # Optionally, include the Swift extensions if you're using Swift.
 pod 'FirebaseFirestoreSwift'

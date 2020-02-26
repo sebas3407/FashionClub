@@ -41,7 +41,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    func doLogin(){
+    func goToMainPage(){
         
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let destVC = storyboard.instantiateViewController(withIdentifier: "TapBarVC") as! TabBarViewController
@@ -71,25 +71,33 @@ class LoginViewController: UIViewController {
         password = "12345678"
         #endif
             
-        let db = Firestore.firestore()
-        
-        db.collection("user").whereField("email", isEqualTo: email).whereField("password", isEqualTo: password).getDocuments() { (querySnapshot, err) in
-                if let err = err {
-                    print("Error getting documents: \(err)")
-                } else {
-                    if (querySnapshot!.documents.count > 0){
-                        //We found the user
-                        for document in querySnapshot!.documents {
-                            User.userPrueba = User.init(data: document.data())
-                            self.setActivityIndicator(state: 0)
-                            self.doLogin()
-                        }
-                    }
-                    else{
-                        self.showErrorMessage(title: "Datos incorrectos", message: "Por favor, comprueba tu usuario y contraseña")
-                    }
-                }
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+            if(authResult != nil){
+                //We are authenticate, now we can download userData
+                self?.doLogin()
+            }
+            else{
+                self?.showErrorMessage(title: "Datos incorrectos", message: "Por favor, comprueba tu usuario y contraseña")
+            }
         }
+    }
+    
+    func doLogin(){
+        let db = Firestore.firestore()
+        db.collection("user").whereField("email", isEqualTo: self.email).getDocuments() { (querySnapshot, err) in
+                        if let err = err {
+                            print("Error getting documents: \(err)")
+                        } else {
+                            if (querySnapshot!.documents.count > 0){
+                                //We found the user
+                                for document in querySnapshot!.documents {
+                                    User.userPrueba = User.init(data: document.data())
+                                    self.setActivityIndicator(state: 0)
+                                    self.goToMainPage()
+                                }
+                            }
+                        }
+                }
     }
     
     func setActivityIndicator(state : Int) {

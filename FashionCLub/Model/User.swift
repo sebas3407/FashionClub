@@ -12,11 +12,11 @@ struct User {
     
     public static var userPrueba = User()
 
-//    var firstName : String = ""
-//    var lastName : String = ""
-//    var gender : String = ""
     var email: String = ""
     var password: String = ""
+    //    var firstName : String = ""
+    //    var lastName : String = ""
+    //    var gender : String = ""
 
     init?(data: [String: Any]) {
         guard

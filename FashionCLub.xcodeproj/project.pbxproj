@@ -271,6 +271,7 @@
 				932C13F523E9C8F4003DBCF9 /* Frameworks */,
 				932C13F623E9C8F4003DBCF9 /* Resources */,
 				3D1FCDFAC457EEEC2C040D4E /* [CP] Embed Pods Frameworks */,
+				2D60EA3E0C5C30F481C86235 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -309,6 +310,7 @@
 				932C141823E9C8F6003DBCF9 /* Frameworks */,
 				932C141923E9C8F6003DBCF9 /* Resources */,
 				C8E84DA695ECD6972A5D8DC4 /* [CP] Embed Pods Frameworks */,
+				A49DA518FEC71AF2F59097D0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -392,6 +394,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2D60EA3E0C5C30F481C86235 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FashionCLub/Pods-FashionCLub-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FashionCLub/Pods-FashionCLub-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FashionCLub/Pods-FashionCLub-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3439A995166080092BFBA09F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -429,6 +448,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FashionCLub/Pods-FashionCLub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A49DA518FEC71AF2F59097D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FashionCLub-FashionCLubUITests/Pods-FashionCLub-FashionCLubUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FashionCLub-FashionCLubUITests/Pods-FashionCLub-FashionCLubUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FashionCLub-FashionCLubUITests/Pods-FashionCLub-FashionCLubUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AD2A896448A4101268A65B46 /* [CP] Check Pods Manifest.lock */ = {
