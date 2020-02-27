@@ -40,6 +40,9 @@ class UserConfigurationViewController: UITableViewController, UIPickerViewDelega
                 sendEmail()
             }
         }
+        else if (indexPath.section == 4){
+            logout()
+        }
     }
     
     func shareApp(){
@@ -70,5 +73,21 @@ class UserConfigurationViewController: UITableViewController, UIPickerViewDelega
 
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true)
+    }
+    
+    @objc func logout(){
+        do{
+            try Auth.auth().signOut()
+            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            let destVC = storyboard.instantiateViewController(withIdentifier: "Main") as! LoginViewController
+                    
+            destVC.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+            destVC.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+                    
+            self.present(destVC, animated: true, completion: nil)
+        }
+        catch{
+            
+        }
     }
 }
