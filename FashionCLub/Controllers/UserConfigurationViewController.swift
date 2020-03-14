@@ -8,6 +8,7 @@
 
 import UIKit
 import MessageUI
+import Firebase
 
 class UserConfigurationViewController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
@@ -28,7 +29,11 @@ class UserConfigurationViewController: UITableViewController, UIPickerViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     //   lbl_email.text = Student.estudiante.name
+        lbl_email.text = User.myUser?.email
+    }
+    
+    @IBAction func doneConfiguration(_ sender: Any) {
+        dismiss(animated: true,completion: nil)
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

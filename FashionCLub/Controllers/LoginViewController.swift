@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseFirestore
+//import GoogleSignIn
 
 class LoginViewController: UIViewController {
 
@@ -28,6 +29,23 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    @IBOutlet weak var lblText: UILabel! {
+        didSet{
+            let attrs1 = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17), NSAttributedString.Key.foregroundColor : UIColor.blue]
+
+            let attrs2 = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17), NSAttributedString.Key.foregroundColor : UIColor.red]
+ 
+            let attributedString1 = NSMutableAttributedString(string:"¿Eres nuevo? ", attributes:attrs1)
+            let attributedString2 = NSMutableAttributedString(string:"¡Registrate!", attributes:attrs2)
+
+            attributedString1.append(attributedString2)
+            self.lblText.attributedText = attributedString1
+            
+            let tap = UITapGestureRecognizer(target: self, action: #selector(goToRegisterPage))
+            self.lblText.addGestureRecognizer(tap)
+        }
+    }
+    
     let bottomColor : CGColor = UIColor.init(displayP3Red: 0.86, green: 0.86, blue: 0.89, alpha: 1).cgColor
 
 //    var articlesData : Product = []
@@ -39,6 +57,17 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         activityIndicator.isHidden = true
         super.viewDidLoad()
+    }
+    
+    @objc func goToRegisterPage(){
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let destVC = storyboard.instantiateViewController(withIdentifier: "RegisterVC") as! RegisterViewController
+                   
+        destVC.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        destVC.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+                   
+        self.present(destVC, animated: true, completion: nil)
     }
     
     func goToMainPage(){
@@ -66,10 +95,8 @@ class LoginViewController: UIViewController {
         
         setActivityIndicator(state: 1)
 
-        #if DEBUG
         email = "sebasortiz2000@gmail.com"
         password = "12345678"
-        #endif
             
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
             if(authResult != nil){
@@ -91,7 +118,7 @@ class LoginViewController: UIViewController {
                             if (querySnapshot!.documents.count > 0){
                                 //We found the user
                                 for document in querySnapshot!.documents {
-                                    User.userPrueba = User.init(data: document.data())
+                                    User.myUser = User.init(data: document.data())
                                     self.setActivityIndicator(state: 0)
                                     self.goToMainPage()
                                 }
@@ -102,8 +129,6 @@ class LoginViewController: UIViewController {
     
     func setActivityIndicator(state : Int) {
         if (state == 1){
-              // mainView.isOpaque = false
-            //   mainView.backgroundColor = UIColor.black.withAlphaComponent(0.2)
                activityIndicator.isHidden = false
                activityIndicator.startAnimating()
         }

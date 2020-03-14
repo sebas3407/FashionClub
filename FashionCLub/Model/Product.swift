@@ -35,7 +35,7 @@ struct Product {
         self.image = image
     }
         
-    //    Default constructor
+    // Default constructor
     init?() {
     }
 }

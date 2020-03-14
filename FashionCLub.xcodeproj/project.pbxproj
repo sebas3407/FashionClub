@@ -20,6 +20,7 @@
 		932C141523E9C8F6003DBCF9 /* FashionCLubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C141423E9C8F6003DBCF9 /* FashionCLubTests.swift */; };
 		932C142023E9C8F6003DBCF9 /* FashionCLubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C141F23E9C8F6003DBCF9 /* FashionCLubUITests.swift */; };
 		932EEC5A2401CDC80043F623 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 932EEC592401CDC80043F623 /* GoogleService-Info.plist */; };
+		934C1C5D240B3ED6003D610F /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934C1C5C240B3ED6003D610F /* ProductTableViewController.swift */; };
 		934EBF8323EAEE6100A96A18 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934EBF8223EAEE6100A96A18 /* LoginViewController.swift */; };
 		934EBF8823EC8BFE00A96A18 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934EBF8723EC8BFE00A96A18 /* TabBarViewController.swift */; };
 		934EBF8B23EC8E2C00A96A18 /* TextFIeldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934EBF8A23EC8E2C00A96A18 /* TextFIeldExtensions.swift */; };
@@ -79,6 +80,7 @@
 		932C141F23E9C8F6003DBCF9 /* FashionCLubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionCLubUITests.swift; sourceTree = "<group>"; };
 		932C142123E9C8F6003DBCF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		932EEC592401CDC80043F623 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		934C1C5C240B3ED6003D610F /* ProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
 		934EBF8223EAEE6100A96A18 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		934EBF8723EC8BFE00A96A18 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		934EBF8A23EC8E2C00A96A18 /* TextFIeldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFIeldExtensions.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				9310F0AF23F313B900778780 /* UserConfigurationViewController.swift */,
 				9376AC1C23F5562900AB768B /* RegisterViewController.swift */,
 				9376AC1E23F5583B00AB768B /* ProfileViewController.swift */,
+				934C1C5C240B3ED6003D610F /* ProductTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 				9376AC2723F5A00C00AB768B /* Product.swift in Sources */,
 				934EBF8323EAEE6100A96A18 /* LoginViewController.swift in Sources */,
 				9376AC2A23F5AB4900AB768B /* ApiService.swift in Sources */,
+				934C1C5D240B3ED6003D610F /* ProductTableViewController.swift in Sources */,
 				9376AC1F23F5583B00AB768B /* ProfileViewController.swift in Sources */,
 				9310F0B223F319B500778780 /* User.swift in Sources */,
 				934EBF8823EC8BFE00A96A18 /* TabBarViewController.swift in Sources */,
