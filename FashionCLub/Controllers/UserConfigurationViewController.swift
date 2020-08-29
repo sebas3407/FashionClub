@@ -84,7 +84,7 @@ class UserConfigurationViewController: UITableViewController, UIPickerViewDelega
         do{
             try Auth.auth().signOut()
             let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            let destVC = storyboard.instantiateViewController(withIdentifier: "Main") as! LoginViewController
+            let destVC = storyboard.instantiateViewController(withIdentifier: "LoginVC") as! LoginViewController
                     
             destVC.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
             destVC.modalTransitionStyle = UIModalTransitionStyle.crossDissolve

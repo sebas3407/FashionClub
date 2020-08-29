@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="51X-7K-5Qu">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Walkthrough 1-->
+        <scene sceneID="VA8-zl-WbZ">
+            <objects>
+                <viewController id="51X-7K-5Qu" userLabel="Walkthrough 1" customClass="WalkthroughFirstViewControllerViewController" customModule="FashionCLub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cm9-Ov-kNJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clothes" translatesAutoresizingMaskIntoConstraints="NO" id="cZh-vb-iiR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redWallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="m21-Pq-bf0">
+                                <rect key="frame" x="1" y="183" width="374" height="484"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Frt-fY-v6G">
+                                <rect key="frame" x="88" y="563" width="200" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="ufl-VE-bTR"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Siguiente">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="21" name="Arial-BoldMT"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consigue Lucir Tu mejor estilo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emr-yQ-iwR">
+                                <rect key="frame" x="71" y="408" width="235" height="88"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="m21-Pq-bf0" secondAttribute="trailing" id="1Uo-Zb-BNt"/>
+                            <constraint firstAttribute="trailing" secondItem="cZh-vb-iiR" secondAttribute="trailing" id="4xA-qB-aWC"/>
+                            <constraint firstItem="m21-Pq-bf0" firstAttribute="leading" secondItem="Ske-FG-zb6" secondAttribute="leading" constant="1" id="6du-Ka-YRo"/>
+                            <constraint firstItem="m21-Pq-bf0" firstAttribute="top" secondItem="Ske-FG-zb6" secondAttribute="top" constant="183" id="7fS-7E-ZfY"/>
+                            <constraint firstItem="Ske-FG-zb6" firstAttribute="bottom" secondItem="Frt-fY-v6G" secondAttribute="bottom" constant="48" id="Bg1-Ah-vpr"/>
+                            <constraint firstItem="cZh-vb-iiR" firstAttribute="top" secondItem="cm9-Ov-kNJ" secondAttribute="top" id="ECE-Zc-8o3"/>
+                            <constraint firstAttribute="bottom" secondItem="m21-Pq-bf0" secondAttribute="bottom" id="GPH-Eh-2Mk"/>
+                            <constraint firstItem="emr-yQ-iwR" firstAttribute="top" secondItem="Ske-FG-zb6" secondAttribute="top" constant="408" id="JEN-Z7-h5B"/>
+                            <constraint firstItem="emr-yQ-iwR" firstAttribute="leading" secondItem="Ske-FG-zb6" secondAttribute="leading" constant="71" id="Jml-Zs-Bvx"/>
+                            <constraint firstItem="Frt-fY-v6G" firstAttribute="top" secondItem="emr-yQ-iwR" secondAttribute="bottom" constant="67" id="Tbj-cR-gkb"/>
+                            <constraint firstItem="emr-yQ-iwR" firstAttribute="centerX" secondItem="Frt-fY-v6G" secondAttribute="centerX" constant="0.5" id="UlK-KF-D3k"/>
+                            <constraint firstAttribute="bottom" secondItem="cZh-vb-iiR" secondAttribute="bottom" id="W1o-43-Cou"/>
+                            <constraint firstItem="emr-yQ-iwR" firstAttribute="centerX" secondItem="m21-Pq-bf0" secondAttribute="centerX" constant="0.5" id="bxG-0L-dHK"/>
+                            <constraint firstItem="cZh-vb-iiR" firstAttribute="leading" secondItem="Ske-FG-zb6" secondAttribute="leading" id="i0U-e8-MUe"/>
+                            <constraint firstItem="Frt-fY-v6G" firstAttribute="leading" secondItem="Ske-FG-zb6" secondAttribute="leading" constant="88" id="mIx-Ig-Yxf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ske-FG-zb6"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn_next" destination="Frt-fY-v6G" id="nsm-qe-6HE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RXL-hA-I6Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4247.1999999999998" y="-0.44977511244377816"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clothes" width="640" height="429"/>
+        <image name="redWallpaper" width="375" height="812"/>
+    </resources>
+</document>

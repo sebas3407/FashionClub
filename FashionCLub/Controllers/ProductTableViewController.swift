@@ -50,8 +50,8 @@ class ProductTableViewController : UITableViewController {
             secondCountry = countries[indexPath.row + (indexPath.row + 1)]
         }
         
-        cell.productTittle.text = firstCountry.name
-        cell.productDescription.text = secondCountry.name
+//        cell.productTittle.text = firstCountry.name
+//        cell.productDescription.text = secondCountry.name
 
         return cell
     }

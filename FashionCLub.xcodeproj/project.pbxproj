@@ -11,6 +11,7 @@
 		4FF4BE3F33DA46263CE41A2E /* Pods_FashionCLubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD9656B53B793B68DA1018A5 /* Pods_FashionCLubTests.framework */; };
 		9310F0B023F313B900778780 /* UserConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310F0AF23F313B900778780 /* UserConfigurationViewController.swift */; };
 		9310F0B223F319B500778780 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310F0B123F319B500778780 /* User.swift */; };
+		932AC17524F1A16300130EB4 /* Walkthrough.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 932AC17424F1A16300130EB4 /* Walkthrough.storyboard */; };
 		932C13FC23E9C8F4003DBCF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C13FB23E9C8F4003DBCF9 /* AppDelegate.swift */; };
 		932C13FE23E9C8F4003DBCF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C13FD23E9C8F4003DBCF9 /* SceneDelegate.swift */; };
 		932C140023E9C8F4003DBCF9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C13FF23E9C8F4003DBCF9 /* FirstViewController.swift */; };
@@ -65,6 +66,7 @@
 		66768C500EAA0A7AF8998EDE /* Pods-FashionCLub-FashionCLubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionCLub-FashionCLubUITests.debug.xcconfig"; path = "Target Support Files/Pods-FashionCLub-FashionCLubUITests/Pods-FashionCLub-FashionCLubUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9310F0AF23F313B900778780 /* UserConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConfigurationViewController.swift; sourceTree = "<group>"; };
 		9310F0B123F319B500778780 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		932AC17424F1A16300130EB4 /* Walkthrough.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Walkthrough.storyboard; sourceTree = "<group>"; };
 		932C13F823E9C8F4003DBCF9 /* FashionCLub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FashionCLub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		932C13FB23E9C8F4003DBCF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		932C13FD23E9C8F4003DBCF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 				9376AC3223FEB44700AB768B /* WalkthroughFirstViewControllerViewController.swift */,
 				9376AC2D23FD394C00AB768B /* WalkthroughSecondViewController.swift */,
 				9376AC2F23FD512500AB768B /* WalkthroughThirdViewController.swift */,
+				932AC17424F1A16300130EB4 /* Walkthrough.storyboard */,
 			);
 			path = Walkthrough;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 			files = (
 				934EBF8D23EECEAF00A96A18 /* Main.storyboard in Resources */,
 				932EEC5A2401CDC80043F623 /* GoogleService-Info.plist in Resources */,
+				932AC17524F1A16300130EB4 /* Walkthrough.storyboard in Resources */,
 				932C140A23E9C8F6003DBCF9 /* LaunchScreen.storyboard in Resources */,
 				932C140723E9C8F6003DBCF9 /* Assets.xcassets in Resources */,
 			);
