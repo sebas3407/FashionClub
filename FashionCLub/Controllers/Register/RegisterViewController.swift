@@ -107,8 +107,8 @@ class RegisterViewController: UIViewController {
     
     @objc func goToLoginPage(){
         
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let destVC = storyboard.instantiateViewController(withIdentifier: "LoginVC") as! LoginViewController
+        let storyboard: UIStoryboard = UIStoryboard(name: "Login", bundle: Bundle.main)
+        let destVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
                    
         destVC.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         destVC.modalTransitionStyle = UIModalTransitionStyle.crossDissolve

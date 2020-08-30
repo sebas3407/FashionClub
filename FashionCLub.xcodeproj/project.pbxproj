@@ -35,6 +35,8 @@
 		9376AC2E23FD394C00AB768B /* WalkthroughSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AC2D23FD394C00AB768B /* WalkthroughSecondViewController.swift */; };
 		9376AC3023FD512500AB768B /* WalkthroughThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9376AC2F23FD512500AB768B /* WalkthroughThirdViewController.swift */; };
 		93783C8A24FC030A00CBA8C1 /* WalkthroughFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93783C8924FC030900CBA8C1 /* WalkthroughFirstViewController.swift */; };
+		93783C8D24FC0F5500CBA8C1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93783C8C24FC0F5500CBA8C1 /* Login.storyboard */; };
+		93783C9024FC29AE00CBA8C1 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93783C8F24FC29AE00CBA8C1 /* Register.storyboard */; };
 		C5F502A7A2CABDF668C886F6 /* Pods_FashionCLub_FashionCLubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0A8DFFA0010F6A766D7B44 /* Pods_FashionCLub_FashionCLubUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +97,8 @@
 		9376AC2D23FD394C00AB768B /* WalkthroughSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughSecondViewController.swift; sourceTree = "<group>"; };
 		9376AC2F23FD512500AB768B /* WalkthroughThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughThirdViewController.swift; sourceTree = "<group>"; };
 		93783C8924FC030900CBA8C1 /* WalkthroughFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughFirstViewController.swift; sourceTree = "<group>"; };
+		93783C8C24FC0F5500CBA8C1 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		93783C8F24FC29AE00CBA8C1 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		CE0A8DFFA0010F6A766D7B44 /* Pods_FashionCLub_FashionCLubUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionCLub_FashionCLubUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD9656B53B793B68DA1018A5 /* Pods_FashionCLubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionCLubTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -220,13 +224,13 @@
 		934EBF8423EC8B0800A96A18 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				93783C8E24FC277600CBA8C1 /* Register */,
+				93783C8B24FC0EEE00CBA8C1 /* Login */,
 				9376AC3123FEB3EF00AB768B /* Walkthrough */,
 				932C140123E9C8F4003DBCF9 /* SecondViewController.swift */,
-				934EBF8223EAEE6100A96A18 /* LoginViewController.swift */,
 				932C13FF23E9C8F4003DBCF9 /* FirstViewController.swift */,
 				934EBF8723EC8BFE00A96A18 /* TabBarViewController.swift */,
 				9310F0AF23F313B900778780 /* UserConfigurationViewController.swift */,
-				9376AC1C23F5562900AB768B /* RegisterViewController.swift */,
 				9376AC1E23F5583B00AB768B /* ProfileViewController.swift */,
 				934C1C5C240B3ED6003D610F /* ProductTableViewController.swift */,
 			);
@@ -260,6 +264,24 @@
 				9376AC2F23FD512500AB768B /* WalkthroughThirdViewController.swift */,
 			);
 			path = Walkthrough;
+			sourceTree = "<group>";
+		};
+		93783C8B24FC0EEE00CBA8C1 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				934EBF8223EAEE6100A96A18 /* LoginViewController.swift */,
+				93783C8C24FC0F5500CBA8C1 /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		93783C8E24FC277600CBA8C1 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				9376AC1C23F5562900AB768B /* RegisterViewController.swift */,
+				93783C8F24FC29AE00CBA8C1 /* Register.storyboard */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,7 +398,9 @@
 				934EBF8D23EECEAF00A96A18 /* Main.storyboard in Resources */,
 				932EEC5A2401CDC80043F623 /* GoogleService-Info.plist in Resources */,
 				932C140A23E9C8F6003DBCF9 /* LaunchScreen.storyboard in Resources */,
+				93783C8D24FC0F5500CBA8C1 /* Login.storyboard in Resources */,
 				932C140723E9C8F6003DBCF9 /* Assets.xcassets in Resources */,
+				93783C9024FC29AE00CBA8C1 /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

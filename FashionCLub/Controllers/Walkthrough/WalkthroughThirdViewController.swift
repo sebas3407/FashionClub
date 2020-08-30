@@ -19,4 +19,14 @@ class WalkthroughThirdViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func goToLoginPage(_ sender: UIButton) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Login", bundle: Bundle.main)
+        let destVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        
+        destVC.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        destVC.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        
+        self.present(destVC, animated: true, completion: nil)
+    }
 }
