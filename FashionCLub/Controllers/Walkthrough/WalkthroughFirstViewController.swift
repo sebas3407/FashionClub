@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseFirestore
 
-class WalkthroughFirstViewControllerViewController: UIViewController {
+class WalkthroughFirstViewController: UIViewController {
 
     @IBOutlet weak var btn_next: UIButton!{
         didSet{
