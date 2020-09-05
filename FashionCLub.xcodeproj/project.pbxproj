@@ -12,6 +12,7 @@
 		9310F0B023F313B900778780 /* UserConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310F0AF23F313B900778780 /* UserConfigurationViewController.swift */; };
 		9310F0B223F319B500778780 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310F0B123F319B500778780 /* User.swift */; };
 		9319949E2502A85000E7676F /* UserConfiguration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9319949D2502A85000E7676F /* UserConfiguration.storyboard */; };
+		931994A02503F92800E7676F /* ProductCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9319949F2503F92800E7676F /* ProductCollectionViewController.swift */; };
 		932C13FC23E9C8F4003DBCF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C13FB23E9C8F4003DBCF9 /* AppDelegate.swift */; };
 		932C13FE23E9C8F4003DBCF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C13FD23E9C8F4003DBCF9 /* SceneDelegate.swift */; };
 		932C140023E9C8F4003DBCF9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932C13FF23E9C8F4003DBCF9 /* FirstViewController.swift */; };
@@ -71,6 +72,7 @@
 		9310F0AF23F313B900778780 /* UserConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConfigurationViewController.swift; sourceTree = "<group>"; };
 		9310F0B123F319B500778780 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9319949D2502A85000E7676F /* UserConfiguration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserConfiguration.storyboard; sourceTree = "<group>"; };
+		9319949F2503F92800E7676F /* ProductCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewController.swift; sourceTree = "<group>"; };
 		932C13F823E9C8F4003DBCF9 /* FashionCLub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FashionCLub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		932C13FB23E9C8F4003DBCF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		932C13FD23E9C8F4003DBCF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 				934EBF8723EC8BFE00A96A18 /* TabBarViewController.swift */,
 				9376AC1E23F5583B00AB768B /* ProfileViewController.swift */,
 				934C1C5C240B3ED6003D610F /* ProductTableViewController.swift */,
+				9319949F2503F92800E7676F /* ProductCollectionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -603,6 +606,7 @@
 				93683A3B24058AA500C7E4C7 /* ButtonExtension.swift in Sources */,
 				9376AC2723F5A00C00AB768B /* Product.swift in Sources */,
 				934EBF8323EAEE6100A96A18 /* LoginViewController.swift in Sources */,
+				931994A02503F92800E7676F /* ProductCollectionViewController.swift in Sources */,
 				9376AC2A23F5AB4900AB768B /* ApiService.swift in Sources */,
 				934C1C5D240B3ED6003D610F /* ProductTableViewController.swift in Sources */,
 				9376AC1F23F5583B00AB768B /* ProfileViewController.swift in Sources */,

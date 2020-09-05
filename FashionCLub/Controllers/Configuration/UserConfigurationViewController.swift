@@ -66,7 +66,7 @@ class UserConfigurationViewController: UITableViewController, UIPickerViewDelega
     func sendEmail() {
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
-            mail.mailComposeDelegate = self as! MFMailComposeViewControllerDelegate
+            mail.mailComposeDelegate = self as? MFMailComposeViewControllerDelegate
             mail.setToRecipients(["sebasortiz2000@gmail.com"])
             mail.setMessageBody("<p>You're so awesome!</p>", isHTML: true)
 

@@ -4,8 +4,17 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Products-->
         <scene sceneID="y5P-bq-mCE">
@@ -111,6 +120,7 @@
                         <segue destination="sTL-QD-QK8" kind="relationship" relationship="viewControllers" id="APx-cX-R2d"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="ZaT-ov-HWp" kind="relationship" relationship="viewControllers" id="dar-uP-eun"/>
+                        <segue destination="tOM-wD-vdk" kind="relationship" relationship="viewControllers" id="1Jb-aj-xab"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -463,6 +473,129 @@
             </objects>
             <point key="canvasLocation" x="-4562.3999999999996" y="-0.44977511244377816"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="T4h-rt-gtV">
+            <objects>
+                <viewController storyboardIdentifier="CollectionVC" automaticallyAdjustsScrollViewInsets="NO" id="tOM-wD-vdk" customClass="CollectionViewController" customModule="LMS_pre" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H6s-1H-TRW"/>
+                        <viewControllerLayoutGuide type="bottom" id="5dV-4f-lEi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="js3-k8-ZSL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wy5-dU-HUw">
+                                <rect key="frame" x="0.0" y="202" width="414" height="611"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="QhC-kx-ulR">
+                                    <size key="itemSize" width="164" height="400"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="nse-Va-F6u" customClass="CustomCollectionViewCell" customModule="LMS_pre" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="164" height="400"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8nl-6P-uau">
+                                            <rect key="frame" x="0.0" y="0.0" width="164" height="400"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informes y resultados" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8B-v0-5ID">
+                                                    <rect key="frame" x="27" y="211" width="110" height="40"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="04E-5W-mvR">
+                                                    <rect key="frame" x="0.0" y="0.0" width="164" height="203"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nikeShoes" translatesAutoresizingMaskIntoConstraints="NO" id="3JY-Tl-HGR">
+                                                            <rect key="frame" x="0.0" y="21" width="164" height="150"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="3JY-Tl-HGR" firstAttribute="centerX" secondItem="04E-5W-mvR" secondAttribute="centerX" id="49z-fx-5zu"/>
+                                                        <constraint firstItem="3JY-Tl-HGR" firstAttribute="leading" secondItem="04E-5W-mvR" secondAttribute="leading" id="VfB-pI-Kfv"/>
+                                                        <constraint firstItem="3JY-Tl-HGR" firstAttribute="centerY" secondItem="04E-5W-mvR" secondAttribute="centerY" constant="-5.5" id="eJB-QE-0aT"/>
+                                                        <constraint firstItem="3JY-Tl-HGR" firstAttribute="top" secondItem="04E-5W-mvR" secondAttribute="top" constant="21" id="rZB-4v-QhN"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="04E-5W-mvR" firstAttribute="leading" secondItem="8nl-6P-uau" secondAttribute="leading" id="2ma-gZ-0bP"/>
+                                                <constraint firstItem="z8B-v0-5ID" firstAttribute="centerX" secondItem="04E-5W-mvR" secondAttribute="centerX" id="7Fi-jg-kzh"/>
+                                                <constraint firstAttribute="bottom" secondItem="z8B-v0-5ID" secondAttribute="bottom" constant="149" id="Gsb-BK-M3d"/>
+                                                <constraint firstItem="z8B-v0-5ID" firstAttribute="leading" secondItem="8nl-6P-uau" secondAttribute="leading" constant="27" id="NtJ-n5-gSg"/>
+                                                <constraint firstItem="04E-5W-mvR" firstAttribute="top" secondItem="8nl-6P-uau" secondAttribute="topMargin" constant="-8" id="Vdy-jN-DRS"/>
+                                                <constraint firstItem="z8B-v0-5ID" firstAttribute="centerX" secondItem="8nl-6P-uau" secondAttribute="centerX" id="nFq-Ra-ijs"/>
+                                                <constraint firstItem="z8B-v0-5ID" firstAttribute="top" secondItem="8nl-6P-uau" secondAttribute="top" constant="211" id="nhK-Ko-YS5"/>
+                                                <constraint firstAttribute="bottom" secondItem="04E-5W-mvR" secondAttribute="bottom" constant="197" id="skG-eC-AgQ"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="164" height="400"/>
+                                        <connections>
+                                            <outlet property="cellImage" destination="3JY-Tl-HGR" id="8Q3-sW-eY6"/>
+                                            <outlet property="cellText" destination="z8B-v0-5ID" id="gDd-bT-88k"/>
+                                            <outlet property="cellView" destination="04E-5W-mvR" id="Fl6-tL-NeX"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="tOM-wD-vdk" id="Utm-J6-3J0"/>
+                                    <outlet property="delegate" destination="tOM-wD-vdk" id="rPY-1S-WaW"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola Rosa," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dm-dk-gyG">
+                                <rect key="frame" x="16" y="109" width="343" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="YUD-Jd-dUF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Benvinguda al teu espai de salut digital. On vols accedir?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guh-J4-6w2">
+                                <rect key="frame" x="16" y="149" width="378" height="45"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3dm-dk-gyG" firstAttribute="top" secondItem="H6s-1H-TRW" secondAttribute="bottom" constant="65" id="0bz-i6-8x7"/>
+                            <constraint firstAttribute="trailing" secondItem="Wy5-dU-HUw" secondAttribute="trailing" id="C1s-2A-6Yf"/>
+                            <constraint firstItem="5dV-4f-lEi" firstAttribute="top" secondItem="Wy5-dU-HUw" secondAttribute="bottom" id="IaG-Dd-Fpw"/>
+                            <constraint firstItem="guh-J4-6w2" firstAttribute="leading" secondItem="js3-k8-ZSL" secondAttribute="leading" constant="16" id="MMx-gs-sNM"/>
+                            <constraint firstItem="Wy5-dU-HUw" firstAttribute="top" secondItem="H6s-1H-TRW" secondAttribute="bottom" constant="158" id="MUr-uP-0JL"/>
+                            <constraint firstAttribute="trailing" secondItem="guh-J4-6w2" secondAttribute="trailing" constant="20" id="NSE-gf-0BL"/>
+                            <constraint firstItem="Wy5-dU-HUw" firstAttribute="top" secondItem="guh-J4-6w2" secondAttribute="bottom" constant="8" id="T41-FA-FP6"/>
+                            <constraint firstAttribute="trailing" secondItem="3dm-dk-gyG" secondAttribute="trailing" constant="55" id="d4e-i9-Neb"/>
+                            <constraint firstItem="Wy5-dU-HUw" firstAttribute="leading" secondItem="js3-k8-ZSL" secondAttribute="leading" id="ilu-9Z-UB0"/>
+                            <constraint firstItem="3dm-dk-gyG" firstAttribute="leading" secondItem="js3-k8-ZSL" secondAttribute="leading" constant="16" id="uHA-QW-Xeq"/>
+                            <constraint firstItem="guh-J4-6w2" firstAttribute="top" secondItem="3dm-dk-gyG" secondAttribute="bottom" constant="8" id="w34-4s-TgL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QyA-IE-2Az"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="dGe-Ws-74O"/>
+                    <navigationItem key="navigationItem" id="VJo-x6-INU"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Wy5-dU-HUw" id="e3a-dA-z8G"/>
+                        <outlet property="descriptionLabel" destination="guh-J4-6w2" id="4xv-6O-keq"/>
+                        <outlet property="userNameLabel" destination="3dm-dk-gyG" id="9tB-UX-pWJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7vp-Nc-Nga" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-75.362318840579718" y="-828.34821428571422"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Bitmap" width="375" height="812"/>
@@ -470,6 +603,7 @@
         <image name="Rectangle 2" width="375" height="812"/>
         <image name="chinesse" width="375" height="812"/>
         <image name="clothes" width="640" height="429"/>
+        <image name="nikeShoes" width="750" height="600"/>
         <image name="redWallpaper" width="375" height="812"/>
         <image name="second" width="30" height="30"/>
         <image name="square.and.arrow.up.fill" width="56" height="64"/>
