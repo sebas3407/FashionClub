@@ -23,8 +23,18 @@ class RegisterViewController: UIViewController {
             et_email.setBottomBorder(bottomColor: UIColor.init(named: "et_bottomColor")!.cgColor)
         }
     }
-    @IBOutlet weak var et_password: UITextField!
-    @IBOutlet weak var et_repeatPassword: UITextField!
+    
+    @IBOutlet weak var et_password: UITextField!{
+        didSet{
+            et_password.setBottomBorder(bottomColor: UIColor.init(named: "et_bottomColor")!.cgColor)
+        }
+    }
+    
+    @IBOutlet weak var et_repeatPassword: UITextField!{
+        didSet{
+            et_repeatPassword.setBottomBorder(bottomColor: UIColor.init(named: "et_bottomColor")!.cgColor)
+        }
+    }
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     @IBOutlet weak var lblText: UILabel! {
@@ -43,6 +53,7 @@ class RegisterViewController: UIViewController {
            self.lblText.addGestureRecognizer(tap)
         }
     }
+// MARK: VARIABLES
     var fullName : String = ""
     var gender : String = ""
     var email : String = ""
@@ -89,7 +100,7 @@ class RegisterViewController: UIViewController {
                 
                  //Create firestore account
                  let db = Firestore.firestore()
-                 let ref: DocumentReference? = db.collection("user").addDocument(data: [
+                let _: DocumentReference? = db.collection("user").addDocument(data: [
                     "email": email,
                     "password": password,
                     "fullName": fullName

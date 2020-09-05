@@ -18,6 +18,15 @@ class ProfileViewController: UIViewController {
     }
     
 
+    @IBAction func goToUserConfiguration(_ sender: Any) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "UserConfiguration", bundle: Bundle.main)
+        let destVC = storyboard.instantiateViewController(withIdentifier: "UserConfigurationNav") 
+        
+        destVC.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        destVC.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        
+        self.present(destVC, animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

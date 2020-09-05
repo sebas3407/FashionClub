@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,7 +10,6 @@
         <!--Login View Controller-->
         <scene sceneID="8I4-yx-8CT">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SP3-id-WyL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="LoginViewController" id="uHF-nj-WMG" customClass="LoginViewController" customModule="FashionCLub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L7b-I7-NYH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -150,6 +149,7 @@
                         <outlet property="mainView" destination="L7b-I7-NYH" id="8Ng-ke-hKY"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SP3-id-WyL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1095.2" y="-95.320197044334975"/>
         </scene>
@@ -157,6 +157,6 @@
     <resources>
         <image name="Blob_BG" width="542" height="378"/>
         <image name="Bottom_Blob" width="478" height="404"/>
-        <image name="logo" width="84.5" height="84.5"/>
+        <image name="logo" width="84.666664123535156" height="84.666664123535156"/>
     </resources>
 </document>
