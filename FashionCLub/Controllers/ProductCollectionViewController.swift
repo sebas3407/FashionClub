@@ -158,14 +158,6 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
       
 //        cell.cellView.layer.cornerRadius = 24.3
         
-        if UIScreen.main.bounds.size.height == 480 {
-            cell.cellText.font = UIFont(name: "Montserrat-Regular", size: 12)
-        }
-        
-        if(element == "diagnosticos"){
-            cell.cellText.font = UIFont(name: "Montserrat-Regular", size: 15)
-        }
-        
         return cell
     }
 }
@@ -179,7 +171,7 @@ extension CollectionViewController : UICollectionViewDelegateFlowLayout {
 let padding: CGFloat =  10
 let collectionViewSize = collectionView.frame.size.width - padding
 
-return CGSize(width: collectionViewSize / 2, height: collectionViewSize / 1)
+        return CGSize(width: collectionViewSize / 2, height: collectionViewSize / 1.5)
 
     }
     
