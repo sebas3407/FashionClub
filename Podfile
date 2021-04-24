@@ -6,13 +6,12 @@ target 'FashionCLub' do
   use_frameworks!
 
 # add the Firebase pod for Google Analytics
-pod 'Firebase/Analytics'
-# add pods for any other desired Firebase products
-# https://firebase.google.com/docs/ios/setup#available-pods
 
-pod 'Firebase/Core'
-pod 'Firebase/Firestore'
-pod 'FirebaseUI'
+pod 'Firebase/Analytics'
+#pod 'Firebase/Core'
+#pod 'Firebase/Firestore'
+#pod 'FirebaseUI'
+pod 'Firebase/Crashlytics'
 
 # Optionally, include the Swift extensions if you're using Swift.
 pod 'FirebaseFirestoreSwift'

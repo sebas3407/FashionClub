@@ -81,18 +81,18 @@ class UserConfigurationViewController: UITableViewController, UIPickerViewDelega
     }
     
     @objc func logout(){
-        do{
-            try Auth.auth().signOut()
-            let storyboard: UIStoryboard = UIStoryboard(name: "Login", bundle: Bundle.main)
-            let destVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-                    
-            destVC.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
-            destVC.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
-                    
-            self.present(destVC, animated: true, completion: nil)
-        }
-        catch{
-            
-        }
+//        do{
+//            try Auth.auth().signOut()
+//            let storyboard: UIStoryboard = UIStoryboard(name: "Login", bundle: Bundle.main)
+//            let destVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+//                    
+//            destVC.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+//            destVC.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+//                    
+//            self.present(destVC, animated: true, completion: nil)
+//        }
+//        catch{
+//            
+//        }
     }
 }

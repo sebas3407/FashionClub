@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2BE9B356412441F574B2D50F /* Pods_FashionCLub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52171AB4CEFBE52A1FA70C14 /* Pods_FashionCLub.framework */; };
-		4FF4BE3F33DA46263CE41A2E /* Pods_FashionCLubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD9656B53B793B68DA1018A5 /* Pods_FashionCLubTests.framework */; };
+		1599393F6CCD4D08808960E5 /* Pods_FashionCLubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC29B923C06ADF0F56B9ED50 /* Pods_FashionCLubTests.framework */; };
 		9310F0B023F313B900778780 /* UserConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310F0AF23F313B900778780 /* UserConfigurationViewController.swift */; };
 		9310F0B223F319B500778780 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9310F0B123F319B500778780 /* User.swift */; };
 		9319949E2502A85000E7676F /* UserConfiguration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9319949D2502A85000E7676F /* UserConfiguration.storyboard */; };
@@ -41,7 +40,8 @@
 		93783C8A24FC030A00CBA8C1 /* WalkthroughFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93783C8924FC030900CBA8C1 /* WalkthroughFirstViewController.swift */; };
 		93783C8D24FC0F5500CBA8C1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93783C8C24FC0F5500CBA8C1 /* Login.storyboard */; };
 		93783C9024FC29AE00CBA8C1 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93783C8F24FC29AE00CBA8C1 /* Register.storyboard */; };
-		C5F502A7A2CABDF668C886F6 /* Pods_FashionCLub_FashionCLubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0A8DFFA0010F6A766D7B44 /* Pods_FashionCLub_FashionCLubUITests.framework */; };
+		E6BAD5D8A06EFB70D770AB7A /* Pods_FashionCLub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8C061E83AF229024AE91AB /* Pods_FashionCLub.framework */; };
+		EDE5360C5F3B70A043753C53 /* Pods_FashionCLub_FashionCLubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0929233F45DB909E5E32B550 /* Pods_FashionCLub_FashionCLubUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,13 +62,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09C20442474268E9972557F4 /* Pods-FashionCLubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionCLubTests.debug.xcconfig"; path = "Target Support Files/Pods-FashionCLubTests/Pods-FashionCLubTests.debug.xcconfig"; sourceTree = "<group>"; };
-		33604B487DB6354CCF719C09 /* Pods-FashionCLub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionCLub.debug.xcconfig"; path = "Target Support Files/Pods-FashionCLub/Pods-FashionCLub.debug.xcconfig"; sourceTree = "<group>"; };
-		388CA6861915338B503FA56C /* Pods-FashionCLub-FashionCLubUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionCLub-FashionCLubUITests.release.xcconfig"; path = "Target Support Files/Pods-FashionCLub-FashionCLubUITests/Pods-FashionCLub-FashionCLubUITests.release.xcconfig"; sourceTree = "<group>"; };
-		52171AB4CEFBE52A1FA70C14 /* Pods_FashionCLub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionCLub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		526303FC224085462739882E /* Pods-FashionCLubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionCLubTests.release.xcconfig"; path = "Target Support Files/Pods-FashionCLubTests/Pods-FashionCLubTests.release.xcconfig"; sourceTree = "<group>"; };
-		6396283C211C61F7A6DB01D3 /* Pods-FashionCLub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionCLub.release.xcconfig"; path = "Target Support Files/Pods-FashionCLub/Pods-FashionCLub.release.xcconfig"; sourceTree = "<group>"; };
-		66768C500EAA0A7AF8998EDE /* Pods-FashionCLub-FashionCLubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionCLub-FashionCLubUITests.debug.xcconfig"; path = "Target Support Files/Pods-FashionCLub-FashionCLubUITests/Pods-FashionCLub-FashionCLubUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0929233F45DB909E5E32B550 /* Pods_FashionCLub_FashionCLubUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionCLub_FashionCLubUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D8C061E83AF229024AE91AB /* Pods_FashionCLub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionCLub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F02EE355BED400A729D7C0C /* Pods-FashionCLub-FashionCLubUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionCLub-FashionCLubUITests.release.xcconfig"; path = "Target Support Files/Pods-FashionCLub-FashionCLubUITests/Pods-FashionCLub-FashionCLubUITests.release.xcconfig"; sourceTree = "<group>"; };
+		54981C085AF7877FC6985E3D /* Pods-FashionCLub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionCLub.release.xcconfig"; path = "Target Support Files/Pods-FashionCLub/Pods-FashionCLub.release.xcconfig"; sourceTree = "<group>"; };
+		842D985BBA1A542025C3CB92 /* Pods-FashionCLub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionCLub.debug.xcconfig"; path = "Target Support Files/Pods-FashionCLub/Pods-FashionCLub.debug.xcconfig"; sourceTree = "<group>"; };
+		856546DBD9F059222202889D /* Pods-FashionCLubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionCLubTests.release.xcconfig"; path = "Target Support Files/Pods-FashionCLubTests/Pods-FashionCLubTests.release.xcconfig"; sourceTree = "<group>"; };
 		9310F0AF23F313B900778780 /* UserConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConfigurationViewController.swift; sourceTree = "<group>"; };
 		9310F0B123F319B500778780 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9319949D2502A85000E7676F /* UserConfiguration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserConfiguration.storyboard; sourceTree = "<group>"; };
@@ -107,8 +106,9 @@
 		93783C8924FC030900CBA8C1 /* WalkthroughFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughFirstViewController.swift; sourceTree = "<group>"; };
 		93783C8C24FC0F5500CBA8C1 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		93783C8F24FC29AE00CBA8C1 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
-		CE0A8DFFA0010F6A766D7B44 /* Pods_FashionCLub_FashionCLubUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionCLub_FashionCLubUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD9656B53B793B68DA1018A5 /* Pods_FashionCLubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionCLubTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B80860C4110BDA13A09B7537 /* Pods-FashionCLub-FashionCLubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionCLub-FashionCLubUITests.debug.xcconfig"; path = "Target Support Files/Pods-FashionCLub-FashionCLubUITests/Pods-FashionCLub-FashionCLubUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC29B923C06ADF0F56B9ED50 /* Pods_FashionCLubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FashionCLubTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E02FAD96EDD59B190D1267FB /* Pods-FashionCLubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FashionCLubTests.debug.xcconfig"; path = "Target Support Files/Pods-FashionCLubTests/Pods-FashionCLubTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BE9B356412441F574B2D50F /* Pods_FashionCLub.framework in Frameworks */,
+				E6BAD5D8A06EFB70D770AB7A /* Pods_FashionCLub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FF4BE3F33DA46263CE41A2E /* Pods_FashionCLubTests.framework in Frameworks */,
+				1599393F6CCD4D08808960E5 /* Pods_FashionCLubTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,32 +132,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5F502A7A2CABDF668C886F6 /* Pods_FashionCLub_FashionCLubUITests.framework in Frameworks */,
+				EDE5360C5F3B70A043753C53 /* Pods_FashionCLub_FashionCLubUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		10352057EA8CAD9D10CD2DA9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				52171AB4CEFBE52A1FA70C14 /* Pods_FashionCLub.framework */,
-				CE0A8DFFA0010F6A766D7B44 /* Pods_FashionCLub_FashionCLubUITests.framework */,
-				FD9656B53B793B68DA1018A5 /* Pods_FashionCLubTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		579A7AFCD9E912CB8FACC96B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				33604B487DB6354CCF719C09 /* Pods-FashionCLub.debug.xcconfig */,
-				6396283C211C61F7A6DB01D3 /* Pods-FashionCLub.release.xcconfig */,
-				66768C500EAA0A7AF8998EDE /* Pods-FashionCLub-FashionCLubUITests.debug.xcconfig */,
-				388CA6861915338B503FA56C /* Pods-FashionCLub-FashionCLubUITests.release.xcconfig */,
-				09C20442474268E9972557F4 /* Pods-FashionCLubTests.debug.xcconfig */,
-				526303FC224085462739882E /* Pods-FashionCLubTests.release.xcconfig */,
+				842D985BBA1A542025C3CB92 /* Pods-FashionCLub.debug.xcconfig */,
+				54981C085AF7877FC6985E3D /* Pods-FashionCLub.release.xcconfig */,
+				B80860C4110BDA13A09B7537 /* Pods-FashionCLub-FashionCLubUITests.debug.xcconfig */,
+				4F02EE355BED400A729D7C0C /* Pods-FashionCLub-FashionCLubUITests.release.xcconfig */,
+				E02FAD96EDD59B190D1267FB /* Pods-FashionCLubTests.debug.xcconfig */,
+				856546DBD9F059222202889D /* Pods-FashionCLubTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -179,7 +169,7 @@
 				932C141E23E9C8F6003DBCF9 /* FashionCLubUITests */,
 				932C13F923E9C8F4003DBCF9 /* Products */,
 				579A7AFCD9E912CB8FACC96B /* Pods */,
-				10352057EA8CAD9D10CD2DA9 /* Frameworks */,
+				B88C55A28ED6BBA60E004E88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -312,6 +302,16 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
+		B88C55A28ED6BBA60E004E88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D8C061E83AF229024AE91AB /* Pods_FashionCLub.framework */,
+				0929233F45DB909E5E32B550 /* Pods_FashionCLub_FashionCLubUITests.framework */,
+				CC29B923C06ADF0F56B9ED50 /* Pods_FashionCLubTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -319,12 +319,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 932C142423E9C8F6003DBCF9 /* Build configuration list for PBXNativeTarget "FashionCLub" */;
 			buildPhases = (
-				3439A995166080092BFBA09F /* [CP] Check Pods Manifest.lock */,
+				C9E50492E2F931E39EE8100A /* [CP] Check Pods Manifest.lock */,
 				932C13F423E9C8F4003DBCF9 /* Sources */,
 				932C13F523E9C8F4003DBCF9 /* Frameworks */,
 				932C13F623E9C8F4003DBCF9 /* Resources */,
-				3D1FCDFAC457EEEC2C040D4E /* [CP] Embed Pods Frameworks */,
-				2D60EA3E0C5C30F481C86235 /* [CP] Copy Pods Resources */,
+				93B524172633372900DD3DD7 /* ShellScript */,
+				F8B66FDAFD2E18AC9B612688 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -339,7 +339,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 932C142723E9C8F6003DBCF9 /* Build configuration list for PBXNativeTarget "FashionCLubTests" */;
 			buildPhases = (
-				FE2E080AE8757E45827D1FA8 /* [CP] Check Pods Manifest.lock */,
+				A13AD99417FFBA56679A0B4B /* [CP] Check Pods Manifest.lock */,
 				932C140C23E9C8F6003DBCF9 /* Sources */,
 				932C140D23E9C8F6003DBCF9 /* Frameworks */,
 				932C140E23E9C8F6003DBCF9 /* Resources */,
@@ -358,12 +358,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 932C142A23E9C8F6003DBCF9 /* Build configuration list for PBXNativeTarget "FashionCLubUITests" */;
 			buildPhases = (
-				AD2A896448A4101268A65B46 /* [CP] Check Pods Manifest.lock */,
+				EE7293974826FF54D514ADAD /* [CP] Check Pods Manifest.lock */,
 				932C141723E9C8F6003DBCF9 /* Sources */,
 				932C141823E9C8F6003DBCF9 /* Frameworks */,
 				932C141923E9C8F6003DBCF9 /* Resources */,
-				C8E84DA695ECD6972A5D8DC4 /* [CP] Embed Pods Frameworks */,
-				A49DA518FEC71AF2F59097D0 /* [CP] Copy Pods Resources */,
+				041713702C454F703429671E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -451,24 +450,65 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2D60EA3E0C5C30F481C86235 /* [CP] Copy Pods Resources */ = {
+		041713702C454F703429671E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FashionCLub/Pods-FashionCLub-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FashionCLub-FashionCLubUITests/Pods-FashionCLub-FashionCLubUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FashionCLub/Pods-FashionCLub-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FashionCLub-FashionCLubUITests/Pods-FashionCLub-FashionCLubUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FashionCLub/Pods-FashionCLub-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FashionCLub-FashionCLubUITests/Pods-FashionCLub-FashionCLubUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3439A995166080092BFBA09F /* [CP] Check Pods Manifest.lock */ = {
+		93B524172633372900DD3DD7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+		A13AD99417FFBA56679A0B4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FashionCLubTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9E50492E2F931E39EE8100A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -490,41 +530,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3D1FCDFAC457EEEC2C040D4E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FashionCLub/Pods-FashionCLub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FashionCLub/Pods-FashionCLub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FashionCLub/Pods-FashionCLub-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A49DA518FEC71AF2F59097D0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FashionCLub-FashionCLubUITests/Pods-FashionCLub-FashionCLubUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FashionCLub-FashionCLubUITests/Pods-FashionCLub-FashionCLubUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FashionCLub-FashionCLubUITests/Pods-FashionCLub-FashionCLubUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AD2A896448A4101268A65B46 /* [CP] Check Pods Manifest.lock */ = {
+		EE7293974826FF54D514ADAD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -546,43 +552,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C8E84DA695ECD6972A5D8DC4 /* [CP] Embed Pods Frameworks */ = {
+		F8B66FDAFD2E18AC9B612688 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FashionCLub-FashionCLubUITests/Pods-FashionCLub-FashionCLubUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FashionCLub/Pods-FashionCLub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FashionCLub-FashionCLubUITests/Pods-FashionCLub-FashionCLubUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-FashionCLub/Pods-FashionCLub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FashionCLub-FashionCLubUITests/Pods-FashionCLub-FashionCLubUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FE2E080AE8757E45827D1FA8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FashionCLubTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FashionCLub/Pods-FashionCLub-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -776,10 +760,11 @@
 		};
 		932C142523E9C8F6003DBCF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33604B487DB6354CCF719C09 /* Pods-FashionCLub.debug.xcconfig */;
+			baseConfigurationReference = 842D985BBA1A542025C3CB92 /* Pods-FashionCLub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = K68V4NAV57;
 				INFOPLIST_FILE = FashionCLub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -795,10 +780,11 @@
 		};
 		932C142623E9C8F6003DBCF9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6396283C211C61F7A6DB01D3 /* Pods-FashionCLub.release.xcconfig */;
+			baseConfigurationReference = 54981C085AF7877FC6985E3D /* Pods-FashionCLub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = K68V4NAV57;
 				INFOPLIST_FILE = FashionCLub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -814,7 +800,7 @@
 		};
 		932C142823E9C8F6003DBCF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09C20442474268E9972557F4 /* Pods-FashionCLubTests.debug.xcconfig */;
+			baseConfigurationReference = E02FAD96EDD59B190D1267FB /* Pods-FashionCLubTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -837,7 +823,7 @@
 		};
 		932C142923E9C8F6003DBCF9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 526303FC224085462739882E /* Pods-FashionCLubTests.release.xcconfig */;
+			baseConfigurationReference = 856546DBD9F059222202889D /* Pods-FashionCLubTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -860,7 +846,7 @@
 		};
 		932C142B23E9C8F6003DBCF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66768C500EAA0A7AF8998EDE /* Pods-FashionCLub-FashionCLubUITests.debug.xcconfig */;
+			baseConfigurationReference = B80860C4110BDA13A09B7537 /* Pods-FashionCLub-FashionCLubUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -881,7 +867,7 @@
 		};
 		932C142C23E9C8F6003DBCF9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 388CA6861915338B503FA56C /* Pods-FashionCLub-FashionCLubUITests.release.xcconfig */;
+			baseConfigurationReference = 4F02EE355BED400A729D7C0C /* Pods-FashionCLub-FashionCLubUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -98,42 +98,43 @@ class LoginViewController: UIViewController {
         email = "sebasortiz2000@gmail.com"
         password = "12345678"
             
-        Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
-            if(authResult != nil){
-                //We are authenticate, now we can download userData
-                self?.doLogin()
-            }
-            else{
-                self?.showErrorMessage(title: "Datos incorrectos", message: "Por favor, comprueba tu usuario y contraseña")
-            }
-        }
+//        Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+//            if(authResult != nil){
+//                //We are authenticate, now we can download userData
+////                self?.doLogin()
+//                self?.goToMainPage()
+//            }
+//            else{
+//                self?.showErrorMessage(title: "Datos incorrectos", message: "Por favor, comprueba tu usuario y contraseña")
+//            }
+//        }
     }
     
-    func doLogin(){
-        let db = Firestore.firestore()
-        db.collection("user").whereField("email", isEqualTo: self.email).getDocuments() { (querySnapshot, err) in
-                        if let err = err {
-                            print("Error getting documents: \(err)")
-                        } else {
-                            if (querySnapshot!.documents.count > 0){
-                                //We found the user
-                                for document in querySnapshot!.documents {
-                                    User.myUser = User.init(data: document.data())
-                                    self.setActivityIndicator(state: 0)
-                                    self.goToMainPage()
-                                }
-                            }
-                        }
-                }
-    }
+//    func doLogin(){
+//        let db = Firestore.firestore()
+//        db.collection("user").whereField("email", isEqualTo: self.email).getDocuments() { (querySnapshot, err) in
+//                        if let err = err {
+//                            print("Error getting documents: \(err)")
+//                        } else {
+//                            if (querySnapshot!.documents.count > 0){
+//                                //We found the user
+//                                for document in querySnapshot!.documents {
+//                                    User.myUser = User.init(data: document.data())
+//                                    self.setActivityIndicator(state: 0)
+//                                    self.goToMainPage()
+//                                }
+//                            }
+//                        }
+//                }
+//    }
     
     func setActivityIndicator(state : Int) {
-        if (state == 1){
-               activityIndicator.isHidden = false
-               activityIndicator.startAnimating()
-        }
-        else{
-            self.activityIndicator.stopAnimating()
-        }
+//        if (state == 1){
+//               activityIndicator.isHidden = false
+//               activityIndicator.startAnimating()
+//        }
+//        else{
+//            self.activityIndicator.stopAnimating()
+//        }
     }
 }
